@@ -1,0 +1,187 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                             
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-1}
+\author{EE224BTECH11044 - Muthyala koushik$^{*}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\textbf{1.Section-B : JEE Main/AIEEE}
+\begin{enumerate}[start=4]
+     \item If $f: \mathbb{R} \to \mathbb{R}$ satisfies $f(x+y) = f(x) + f(y)$ for all $x, y \in \mathbb{R}$ and $f(1) = 7$, then $\sum_{r=1}^n f(r)$ is \hfill(2003)
+		
+    \begin{enumerate}
+        \item $\frac{7n(n+1)}{2}$\\
+        \item $\frac{7n}{2}$\\
+        \item $\frac{7(n+1)}{2}$\\
+        \item $7n + (n+1)$
+    \end{enumerate}
+
+    \item The function $f$ from the set of natural numbers to integers is defined by \hfill(2003)
+               $f(n) = \begin{cases} \frac{n-1}{2} & \text{when } n \text{ is odd}, \\-\frac{n}{2} & \text{when } n \text{ is even}.\end{cases}$ is
+
+	\begin{enumerate}
+		\item neither one-one nor onto
+		\item one-one but not onto
+		\item onto but not one-one
+		\item one-one and onto both.
+	\end{enumerate} 
+
+\item The range of the function $f(x)=^{7-x}P_{x-3}$ \\ is \hfill(2004)
+	\begin{enumerate}
+		\item $\{1,2,3,4,5\}$
+		\item $\{1,2,3,4,5,6\}$
+		\item $\{1,2,3,4\}$
+		\item $\{1,2,3\}$
+	\end{enumerate}
+
+       \item If $f:R\to S$, defined by $f(x)=\sin{x}-\sqrt{3}\cos{x}+1$,is onto,then the interval of S is \hfill(2004)
+
+	       \begin{enumerate}
+		       \item $[-1,3]$
+		       \item $[-1,1]$
+		       \item $[0,1]$
+		       \item $[0,3]$
+	       \end{enumerate}
+
+       \item The graph of the function $y=f(x)$ is symmertrical about the line x=2,then \hfill(2004)
+	       \begin{enumerate}
+		       \item $f(x)=-f(-x)$
+		       \item $f(2+x)=f(2-x)$
+		       \item $f(x)=f(-x)$
+		       \item $f(x+2)=f(x-2)$
+	       \end{enumerate}
+
+       \item The domain of the function $f(x)=\frac{\sin^{-1}(x-3)}{\sqrt{9-x^{2}}}$ is \hfill(2004)
+              \begin{enumerate}
+		      \item $[1,3]$
+		      \item $[2,3)$
+		      \item $[1,2]$
+		      \item $[2,3]$
+	      \end{enumerate}
+
+      \item Let $f:(-1,1) \to B$,be a function defined by $f(x)=tan^{-1}\frac{2x}{1-x^{2}}$,then $f$ is both one-one and onto when $B$ is the interval \hfill(2005)
+             \begin{enumerate}
+		     \item $\brak{0,\frac{\pi}{2}}$ \\
+		     \item $\left[0,\frac{\pi}{2}\right)$ \\
+		     \item $\left[-\frac{\pi}{2},\frac{\pi}{2}\right]$ \\
+		     \item $\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$
+	     \end{enumerate}
+     \item A function is macthed below against an interval where it is supposed to increasing.Which of the following pairs is incorrectly matcher? \hfill(2005)\\
+	\textbf{Interval}\hfill \textbf{Function}
+	     \begin{enumerate}
+		     \item $(-\infty,\infty)$\hfill $x^{3}-3x^{2}+3x+3$ \\
+		     \item $[2,\infty)$\hfill$2x^{3}-3x^{2}+3x+3$ \\
+		     \item $\left(-\infty,\frac{1}{3}\right]$\hfill $3x^{2}-2x+1$ \\
+		     \item $(-\infty,-4)$\hfill$x^{3}+6x^{2}+6$
+	     \end{enumerate}
+     \item A real valued function $f(x)$ satisfies the functional equation $$f(x-y)=f(x)f(y)-f(a-x)f(a+y)$$\\
+	     where a given constant and $f(0)$=1,$f(2a-x)$ is equal to \hfill(2005)
+	     \begin{enumerate}
+		     \item $-f(x)$
+		     \item $f(x)$
+		     \item $f(a)+f(a-x)$
+		     \item $f(-x)$
+	     \end{enumerate}
+
+     \item The Largest interval lying in $\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$for which the function,
+	     $f(x)=4^{-x^{2}}+\cos^{-1}\left(\frac{x}{2}-1\right)+\log(\cos{x})$,is defined,is \hfill(2007)
+	     \begin{enumerate}
+		     \item $\left[-\frac{\pi}{4},\frac{\pi}{2}\right)$ \\
+		     \item $\left[0,\frac{\pi}{2}\right)$ \\
+		     \item $[0,\pi]$ \\
+		     \item $\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$
+	     \end{enumerate}
+     \item Let $f:N\to Y$ be a function defined as $f(x)=4x+3$ where Y=$\{y\in \mathbb{N}:y=4x+3 for some x\in \mathbb{N}\}$.Show that $f$ is invertible and its inverse is \hfill(2008)
+	     \begin{enumerate}
+		     \item $g(y)=\frac{3y+4}{3}$ \\
+		     \item $g(y)=4+\frac{y+3}{4}$ \\
+		     \item $g(y)=\frac{y+3}{4}$ \\
+		     \item $g(y)=\frac{y-3}{4}$
+	     \end{enumerate}
+     \item Let $f(x)=(x+1)^{2}-1,x\leq-1$\\
+	     \textbf{Statement-1:}The set \{$x$:$f(x)$=$f^{-1}(x)$=\{0,-1\}\\
+	     \textbf{Statement-2:}$f$ is a bijection.\hfill(2009)
+	     \begin{enumerate}
+		     \item Statement-1 is true,Statement-2 is true.Statement-2 is  not a correct explanation for Statement-1.
+		     \item Statement-1 is true,Statement-2 is flase.
+		     \item Statement-1 is false,Statement-2 is true.
+		     \item Statement-1 is true,Statement-2 is true.Statement-2 is not a correct explanation for Statement-1.
+	     \end{enumerate}
+     \item For real $x$,let $f(x)=x^{3}+5x+1$,then \hfill(2009)
+	     \begin{enumerate}
+		     \item $f$ is onto $\mathbb{R}$ but not one-one
+		     \item $f$ is one-one and onto $\mathbb{R}$
+		     \item $f$ is neither one-one nor onto $\mathbb{R}$
+		     \item $f$ is one-one but not onto $\mathbb{R}$
+	     \end{enumerate}
+     \item The domain of the function $f(x)=\frac{1}{\sqrt{|x|-x}}$ is \hfill(2011)\\
+	     \begin{enumerate}
+		     \item $(0,\infty)$
+		     \item $(-\infty,0)$
+		     \item $(-\infty,\infty)-\{0\} $
+		     \item $(-\infty,\infty)$
+	     \end{enumerate}
+
+     \item $x\in \mathbb{R}-\{0,1\}$,let $f_1(x)=\frac{1}{x}$,$f_2(x)=1-x$ and $f_3(x)=\frac{1}{1-x}$ be the three given functions.If a function,$J(X)$ satisfies ($f_2oJof_1$)($x$)=$f_3(x)$ then J(x) is equal to: \hfill(JEE M 2019-9 Jan(M))
+	     \begin{enumerate}
+		     \item $f_3(x)$
+		     \item $f_3(x)$
+		     \item $f_2(x)$
+		     \item $f_1(x)$
+	     \end{enumerate}
+	
+\end{enumerate}
+
+
+\end{document}
