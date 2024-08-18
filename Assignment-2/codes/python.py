@@ -34,7 +34,7 @@ for i, (x, y) in enumerate(points):
 # Set labels and title
 plt.xlabel('X-axis')
 plt.ylabel('Y-axis')
-plt.title('Parallelogram with Diagonals and Sides')
+plt.title('Parallelogram')
 
 # Add legend
 plt.legend()
