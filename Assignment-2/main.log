@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.6)  18 AUG 2024 20:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.6)  19 AUG 2024 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen143
@@ -1102,90 +1103,79 @@ Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count342
+\c@theorem=\count342
+\c@problem=\count343
+\c@proposition=\count344
+\c@lemma=\count345
+\c@example=\count346
+\c@rem=\count347
 
+(/usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2023/12/09{} The CircuiTikz circuit drawing package version
+ 1.6.6
 
-Package multicol Warning: May not work with the twocolumn option on input line 
-143.
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
-\mult@box=\box83
-\multicol@leftmargin=\dimen328
-\c@unbalance=\count343
-\c@collectmore=\count344
-\doublecol@number=\count345
-\multicoltolerance=\count346
-\multicolpretolerance=\count347
-\full@width=\dimen329
-\page@free=\dimen330
-\premulticols=\dimen331
-\postmulticols=\dimen332
-\multicolsep=\skip73
-\multicolbaselineskip=\skip74
-\partial@page=\box84
-\last@line=\box85
-\mc@boxedresult=\box86
-\maxbalancingoverflow=\dimen333
-\mult@rightbox=\box87
-\mult@grightbox=\box88
-\mult@firstbox=\box89
-\mult@gfirstbox=\box90
-\@tempa=\box91
-\@tempa=\box92
-\@tempa=\box93
-\@tempa=\box94
-\@tempa=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\@tempa=\box102
-\@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
-\@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\@tempa=\box114
-\@tempa=\box115
-\@tempa=\box116
-\@tempa=\box117
-\@tempa=\box118
-\@tempa=\box119
-\@tempa=\box120
-\@tempa=\box121
-\@tempa=\box122
-\@tempa=\box123
-\@tempa=\box124
-\@tempa=\box125
-\@tempa=\box126
-\c@minrows=\count348
-\c@columnbadness=\count349
-\c@finalcolumnbadness=\count350
-\last@try=\dimen334
-\multicolovershoot=\dimen335
-\multicolundershoot=\dimen336
-\mult@nat@firstbox=\box127
-\colbreak@box=\box128
-\mc@col@check@num=\count351
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulebending.code.te
+x
+File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransf
+ormations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgftransformnonlinearflatness=\dimen328
 )
-\c@theorem=\count352
-\c@problem=\count353
-\c@proposition=\count354
-\c@lemma=\count355
-\c@example=\count356
-\c@rem=\count357
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.
+code.tex
+File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@curvilinear@time@a=\dimen329
+\pgf@curvilinear@length@a=\dimen330
+\pgf@curvilinear@length@b=\dimen331
+\pgf@curvilinear@length@c=\dimen332
+\pgf@curvilinear@length@d=\dimen333
+)
+\pgf@arrows@the@rigidity=\dimen334
+))
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
+\pgf@circ@count@a=\count348
+\pgf@circ@count@b=\count349
+\pgf@circ@count@c=\count350
+\pgf@circ@res@up=\dimen335
+\pgf@circ@res@down=\dimen336
+\pgf@circ@res@zero=\dimen337
+\pgf@circ@res@left=\dimen338
+\pgf@circ@res@right=\dimen339
+\pgf@circ@res@other=\dimen340
+\pgf@circ@res@step=\dimen341
+\pgf@circ@res@temp=\dimen342
+\pgf@circ@Rlen=\dimen343
+\pgf@circ@scaled@Rlen=\dimen344
+\pgfstartlinewidth=\dimen345
+)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
+\ctikz@scratchbox=\box83
+)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
+\pgf@circ@res@count=\count351
+)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
+\pgfcirc@labelshift=\dimen346
+)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex))
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 5.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 ) (./main.aux)
 \openout1 = `main.aux'.
@@ -1272,16 +1262,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count358
-\scratchdimen=\dimen337
-\scratchbox=\box129
-\nofMPsegments=\count359
-\nofMParguments=\count360
+\scratchcounter=\count352
+\scratchdimen=\dimen347
+\scratchbox=\box84
+\nofMPsegments=\count353
+\nofMParguments=\count354
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count361
-\MPscratchDim=\dimen338
-\MPnumerator=\count362
-\makeMPintoPDFobject=\count363
+\MPscratchCnt=\count355
+\MPscratchDim=\dimen348
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1292,7 +1282,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count364
+\c@lstlisting=\count358
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/txr/m/n --> TS1/txr/b/n on input line 45.
@@ -1310,62 +1300,47 @@ Package hyperref Info: Link coloring OFF on input line 45.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 6
-2.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 6
-2.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 5
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 6
-2.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 5
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 6
-2.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 5
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
-2.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
-\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 To find $\OML/txmi/m/it/12 x$ \OT1/t
-xr/m/n/12 and $\OML/txmi/m/it/12 y$\OT1/txr/m/n/12 , use the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
-\OT1/txr/m/n/12 prop-erty that the mid-points of the
  []
 
 <figs/fig-1.png, id=11, 462.528pt x 346.896pt>
 File: figs/fig-1.png Graphic file (type png)
 <use figs/fig-1.png>
-Package pdftex.def Info: figs/fig-1.png  used on input line 75.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+Package pdftex.def Info: figs/fig-1.png  used on input line 71.
+(pdftex.def)             Requested size: 361.19843pt x 270.91125pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}
-
-
-
- <./figs/Fig-1.png>] (./main.aux)
+dist/fonts/enc/dvips/base/8r.enc} <./figs/Fig-1.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1374,10 +1349,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EA8ABEC486F3A13062A76EC43AB0A6D2;167.
  ) 
 Here is how much of TeX's memory you used:
- 30312 strings out of 474222
- 593701 string characters out of 5748734
+ 46308 strings out of 474222
+ 1083269 string characters out of 5748734
  1934975 words of memory out of 5000000
- 51912 multiletter control sequences out of 15000+600000
+ 67855 multiletter control sequences out of 15000+600000
  616372 words of font info for 151 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,7n,103p,1172b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1388,7 +1363,7 @@ onts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 85564 bytes).
+Output written on main.pdf (1 page, 86472 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream

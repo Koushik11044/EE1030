@@ -31,6 +31,9 @@ labels = ['A (3, 3)', 'B (6, 4)', 'C (8, 7)', 'D (5, 6)']
 for i, (x, y) in enumerate(points):
     plt.text(x + 0.1, y + 0.1, labels[i])
 
+# Add labels to midpoints
+plt.text(midpoint_1[0] + 0.1, midpoint_1[1] + 0.1, "M (5.5,5)")
+
 # Set labels and title
 plt.xlabel('X-axis')
 plt.ylabel('Y-axis')
