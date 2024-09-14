@@ -1,0 +1,76 @@
+%iffalse           
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\usepackage{circuitikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{Assignment-2}
+\author{EE224BTECH11044 - Muthyala Koushik% <-this % stops a space
+}
+\maketitle
+\bigskip
+
+\textbf{\section{Vector Arithmetic(CBSE)}}
+
+\textbf{Question:} AOBC is a rectangle whose three vertices are vertices $\vec{A}\brak{0,3}, \vec{O}\brak{0,0}$ and $\vec{B}\brak{5,0}$. The length of its diagonal is \\ 
+
+\solution  Direction vector of $\vec{AB}: m=\vec{B}-\vec{A}$
+           \begin{align}
+	   \vec{AB}=\myvec{5\\0}-\myvec{0\\3}=\myvec{5\\-3}
+	   \end{align}	   
+	   length of $\vec{AB}$(Diagonal):$\abs{\abs{m}}=\sqrt{{m_1}^2+{m_2}^2}$
+	   \begin{align}
+	   \abs{\abs{\vec{AB}}}=\sqrt{5^2+\brak{-3}^2}\\
+	   \abs{\abs{\vec{AB}}}=\sqrt{25+9}=\sqrt{34}
+	   \end{align}
+	   so, length of diagonal=$\sqrt{34}$.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figs/fig-1.png}
+\end{figure}
+
+
+\end{document}
