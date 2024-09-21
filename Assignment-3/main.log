@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.6)  18 SEP 2024 10:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.6)  21 SEP 2024 13:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1053,7 +1053,46 @@ Local configuration file tkz-euclide.cfg found and used
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-draw-eu-protractor.tex
 2024/02/04 5.06c tkz-obj-eu-protractor.tex
-)) (./gvv.sty) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+)) (./gvv.sty (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen324
+\captionmargin=\dimen325
+\caption@leftmargin=\dimen326
+\caption@rightmargin=\dimen327
+\caption@width=\dimen328
+\caption@indent=\dimen329
+\caption@parindent=\dimen330
+\caption@hangindent=\dimen331
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1175.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count336
+\c@continuedfloat=\count337
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@matchleft=\count338
+\c@matchright=\count339
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks45
 \inpenc@posthook=\toks46
@@ -1063,9 +1102,9 @@ File: latin1.def 2021/02/14 v1.3d Input encoding file
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen324
+\col@sep=\dimen332
 \ar@mcellbox=\box76
-\extrarowheight=\dimen325
+\extrarowheight=\dimen333
 \NC@list=\toks47
 \extratabsurround=\skip65
 \backup@length=\skip66
@@ -1077,25 +1116,25 @@ Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 \LTright=\skip68
 \LTpre=\skip69
 \LTpost=\skip70
-\LTchunksize=\count336
-\LTcapwidth=\dimen326
+\LTchunksize=\count340
+\LTcapwidth=\dimen334
 \LT@head=\box78
 \LT@firsthead=\box79
 \LT@foot=\box80
 \LT@lastfoot=\box81
 \LT@gbox=\box82
-\LT@cols=\count337
-\LT@rows=\count338
-\c@LT@tables=\count339
-\c@LT@chunks=\count340
+\LT@cols=\count341
+\LT@rows=\count342
+\c@LT@tables=\count343
+\c@LT@chunks=\count344
 \LT@p@ftn=\toks48
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip71
-\multirow@cntb=\count341
+\multirow@cntb=\count345
 \multirow@dima=\skip72
-\bigstrutjot=\dimen327
+\bigstrutjot=\dimen335
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
@@ -1103,12 +1142,12 @@ Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-\c@theorem=\count342
-\c@problem=\count343
-\c@proposition=\count344
-\c@lemma=\count345
-\c@example=\count346
-\c@rem=\count347
+\c@theorem=\count346
+\c@problem=\count347
+\c@proposition=\count348
+\c@lemma=\count349
+\c@example=\count350
+\c@rem=\count351
 
 (/usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
 Package: circuitikz 2023/12/09{} The CircuiTikz circuit drawing package version
@@ -1125,34 +1164,34 @@ File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransf
 ormations.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgftransformnonlinearflatness=\dimen328
+\pgftransformnonlinearflatness=\dimen336
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.
 code.tex
 File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@curvilinear@time@a=\dimen329
-\pgf@curvilinear@length@a=\dimen330
-\pgf@curvilinear@length@b=\dimen331
-\pgf@curvilinear@length@c=\dimen332
-\pgf@curvilinear@length@d=\dimen333
+\pgf@curvilinear@time@a=\dimen337
+\pgf@curvilinear@length@a=\dimen338
+\pgf@curvilinear@length@b=\dimen339
+\pgf@curvilinear@length@c=\dimen340
+\pgf@curvilinear@length@d=\dimen341
 )
-\pgf@arrows@the@rigidity=\dimen334
+\pgf@arrows@the@rigidity=\dimen342
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
-\pgf@circ@count@a=\count348
-\pgf@circ@count@b=\count349
-\pgf@circ@count@c=\count350
-\pgf@circ@res@up=\dimen335
-\pgf@circ@res@down=\dimen336
-\pgf@circ@res@zero=\dimen337
-\pgf@circ@res@left=\dimen338
-\pgf@circ@res@right=\dimen339
-\pgf@circ@res@other=\dimen340
-\pgf@circ@res@step=\dimen341
-\pgf@circ@res@temp=\dimen342
-\pgf@circ@Rlen=\dimen343
-\pgf@circ@scaled@Rlen=\dimen344
-\pgfstartlinewidth=\dimen345
+\pgf@circ@count@a=\count352
+\pgf@circ@count@b=\count353
+\pgf@circ@count@c=\count354
+\pgf@circ@res@up=\dimen343
+\pgf@circ@res@down=\dimen344
+\pgf@circ@res@zero=\dimen345
+\pgf@circ@res@left=\dimen346
+\pgf@circ@res@right=\dimen347
+\pgf@circ@res@other=\dimen348
+\pgf@circ@res@step=\dimen349
+\pgf@circ@res@temp=\dimen350
+\pgf@circ@Rlen=\dimen351
+\pgf@circ@scaled@Rlen=\dimen352
+\pgfstartlinewidth=\dimen353
 )
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex
 \ctikz@scratchbox=\box83
@@ -1162,13 +1201,13 @@ File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
-\pgf@circ@res@count=\count351
+\pgf@circ@res@count=\count355
 )
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
-\pgfcirc@labelshift=\dimen346
+\pgfcirc@labelshift=\dimen354
 )
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex))
@@ -1262,16 +1301,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count352
-\scratchdimen=\dimen347
+\scratchcounter=\count356
+\scratchdimen=\dimen355
 \scratchbox=\box84
-\nofMPsegments=\count353
-\nofMParguments=\count354
+\nofMPsegments=\count357
+\nofMParguments=\count358
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count355
-\MPscratchDim=\dimen348
-\MPnumerator=\count356
-\makeMPintoPDFobject=\count357
+\MPscratchCnt=\count359
+\MPscratchDim=\dimen356
+\MPnumerator=\count360
+\makeMPintoPDFobject=\count361
 \everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1282,7 +1321,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count358
+\c@lstlisting=\count362
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/txr/m/n --> TS1/txr/b/n on input line 45.
@@ -1300,6 +1339,13 @@ Package hyperref Info: Link coloring OFF on input line 45.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
 7.
 
@@ -1338,7 +1384,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 File: figs/fig-1.png Graphic file (type png)
 <use figs/fig-1.png>
 Package pdftex.def Info: figs/fig-1.png  used on input line 75.
-(pdftex.def)             Requested size: 361.19843pt x 270.91125pt.
+(pdftex.def)             Requested size: 309.60315pt x 232.21266pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc} <./figs/fig-1.png>] (./main.aux)
  ***********
@@ -1349,13 +1395,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EA8ABEC486F3A13062A76EC43AB0A6D2;167.
  ) 
 Here is how much of TeX's memory you used:
- 46311 strings out of 474222
- 1083281 string characters out of 5748734
- 1938975 words of memory out of 5000000
- 67853 multiletter control sequences out of 15000+600000
+ 47689 strings out of 474222
+ 1109950 string characters out of 5748734
+ 1937975 words of memory out of 5000000
+ 69221 multiletter control sequences out of 15000+600000
  616372 words of font info for 151 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,14n,103p,1172b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,13n,103p,1172b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/f
@@ -1363,10 +1409,10 @@ onts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 67565 bytes).
+Output written on main.pdf (1 page, 68268 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
