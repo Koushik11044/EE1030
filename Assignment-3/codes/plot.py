@@ -17,11 +17,6 @@ from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import circ_gen
 
-# Read the data from the file
-with open('diagonals_data.txt', 'r') as file:
-    lines = file.readlines()
-
-
 #if using termux
 import subprocess
 import shlex
@@ -31,7 +26,7 @@ import shlex
 O = np.array(([0, 0])).reshape(-1,1)
 B = np.array(([5, 0])).reshape(-1,1)
 A = np.array(([0, 3])).reshape(-1,1)
-C = np.array(([5, 3])).reshape(-1,1)
+C = np.loadtxt("output.dat").reshape(-1,1)
 
 #Generating all lines
 x_OB = line_gen(O,B)
@@ -59,14 +54,6 @@ for i, txt in enumerate(vert_labels):
                  textcoords="offset points", # how to position the text
                  xytext=(25,5), # distance from text to points (x,y)
                  ha='center') # horizontal alignment can be left, right or center
-
-# Extract diagonal lengths from the file
-diagonal_OC = float(lines[0].split(': ')[1].strip())
-diagonal_AB = float(lines[1].split(': ')[1].strip())
-
-# Plot the data
-labels = ['Diagonal OC', 'Diagonal AB']
-values = [diagonal_OC, diagonal_AB]
 
 # use set_position
 ax = plt.gca()
