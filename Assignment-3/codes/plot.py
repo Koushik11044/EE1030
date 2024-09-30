@@ -4,7 +4,6 @@
 #released under GNU GPL
 #Point Vectors
 
-
 import sys                                          #for path to external scripts
 sys.path.insert(0, '/home/koushik/matgeo/codes/CoordGeo')        #path to my scripts
 import numpy as np
@@ -17,61 +16,78 @@ from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import circ_gen
 
-#if using termux
-import subprocess
-import shlex
-#end if
+import sys
+import ctypes
+import numpy as np
+import matplotlib.pyplot as plt
 
-#Given points
-O = np.array(([0, 0])).reshape(-1,1)
-B = np.array(([5, 0])).reshape(-1,1)
-A = np.array(([0, 3])).reshape(-1,1)
-C = np.loadtxt("output.dat").reshape(-1,1)
+# Load the shared C library
+lib = ctypes.CDLL('./libvertex.so')
 
-#Generating all lines
-x_OB = line_gen(O,B)
-x_OA = line_gen(A,O)
-x_BC = line_gen(B,C)
-x_AC = line_gen(A,C)
-x_AB = line_gen(A,B)
+# Helper function to convert NumPy arrays to C arrays
+def to_c_array(np_array):
+    return (ctypes.c_double * 2)(*np_array)
 
-#Plotting all lines
-plt.plot(x_AB[0,:],x_AB[1,:],label='$Diagonal-AB$')
-plt.plot(x_OB[0,:],x_OB[1,:],label='$line-OB$')
-plt.plot(x_OA[0,:],x_OA[1,:],label='$line-OA$')
-plt.plot(x_AC[0,:],x_AC[1,:],label='$line-AC$')
-plt.plot(x_BC[0,:],x_BC[1,:],label='$line-BC$')
+# Define the Python function to call the C function
+def calculate_c_vertex(O, A, B):
+    C = (ctypes.c_double * 2)()  # Create an empty C array for the output (vertex C)
 
-#Labeling the coordinates
-colors = np.arange(1,5)
-tri_coords = np.block([[O,B,A,C]])
+    # Convert NumPy arrays to C arrays using the helper function
+    O_c = to_c_array(O)
+    A_c = to_c_array(A)
+    B_c = to_c_array(B)
+
+    # Call the C function to calculate the vertex C
+    lib.find_c_vertex(O_c, A_c, B_c, C)
+
+    # Return the C vertex as a Python list
+    return [C[0], C[1]]
+
+# Generating points O, A, B
+O = np.array([0, 0]).reshape(2, 1)
+B = np.array([5, 0]).reshape(2, 1)
+A = np.array([0, 3]).reshape(2, 1)
+
+# Call the function to calculate the fourth vertex C
+C = np.array(calculate_c_vertex(O.flatten(), A.flatten(), B.flatten())).reshape(2, 1)
+
+# Generating lines for the parallelogram
+from line.funcs import line_gen
+
+x_OB = line_gen(O.flatten(), B.flatten())
+x_OA = line_gen(O.flatten(), A.flatten())
+x_BC = line_gen(B.flatten(), C.flatten())
+x_AC = line_gen(A.flatten(), C.flatten())
+x_AB = line_gen(A.flatten(), B.flatten())
+
+# Plotting the lines
+plt.plot(x_AB[0,:], x_AB[1,:], label='$Diagonal-AB$')
+plt.plot(x_OB[0,:], x_OB[1,:], label='$line-OB$')
+plt.plot(x_OA[0,:], x_OA[1,:], label='$line-OA$')
+plt.plot(x_AC[0,:], x_AC[1,:], label='$line-AC$')
+plt.plot(x_BC[0,:], x_BC[1,:], label='$line-BC$')
+
+# Labeling the coordinates
+colors = np.arange(1, 5)
+tri_coords = np.block([[O, B, A, C]])
 plt.scatter(tri_coords[0,:], tri_coords[1,:], c=colors)
-vert_labels = ['O','B','A','C']
+vert_labels = ['O', 'B', 'A', 'C']
 for i, txt in enumerate(vert_labels):
-    #plt.annotate(txt, # this is the text
     plt.annotate(f'{txt}\n({tri_coords[0,i]:.2f}, {tri_coords[1,i]:.2f})',
-                 (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
-                 textcoords="offset points", # how to position the text
-                 xytext=(25,5), # distance from text to points (x,y)
-                 ha='center') # horizontal alignment can be left, right or center
+                 (tri_coords[0,i], tri_coords[1,i]),
+                 textcoords="offset points",
+                 xytext=(25, 5),
+                 ha='center')
 
-# use set_position
+# Adjust plot aesthetics
 ax = plt.gca()
 ax.spines['top'].set_color('none')
 ax.spines['left'].set_position('zero')
 ax.spines['right'].set_color('none')
 ax.spines['bottom'].set_position('zero')
-'''
-ax.spines['left'].set_visible(False)
-ax.spines['right'].set_visible(False)
-ax.spines['top'].set_visible(False)
-ax.spines['bottom'].set_visible(False)
-plt.xlabel('$x$')
-plt.ylabel('$y$')
-plt.legend(loc='best')
-'''
-plt.grid() # minor
+
+plt.grid()
 plt.axis('equal')
-plt.title('Rectangle AOBC')
+plt.title('Parallelogram AOBC')
 plt.legend()
 plt.show()
