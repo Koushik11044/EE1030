@@ -1,0 +1,136 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                             
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-5}
+\author{EE224BTECH11044 - Muthyala koushik
+}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{Section-A:JEE Main 2021}
+\begin{enumerate}[start=16]
+	\item $\lim_{n \to \infty}\brak{1+\frac{1+\frac{1}{2}+\dots+\frac{1}{n}}{n^2}}^n$ is equal to:
+		\begin{enumerate}
+			\item $\frac{1}{2}$\\
+			\item $\frac{1}{e}$\\
+			\item $1$\\
+			\item $0$
+		\end{enumerate}
+	\item The total number of positive integral solution $\brak{x,y,z}$ such that $xyz = 24$ is 
+		\begin{enumerate}
+			\item $36$\\
+			\item $45$\\
+			\item $24$\\
+			\item $30$
+		\end{enumerate}
+	\item If a curve passes through the origin and the slope of tangent to it at any point $\brak{x,y}$ is $\frac{x^2-4x+y+8}{x-2}$ , then this curve also passes through the point:
+		\begin{enumerate}
+			\item $\brak{4, 5}$\\
+			\item $\brak{5, 4}$\\
+			\item $\brak{4, 4}$\\
+			\item $\brak{5, 5}$
+		\end{enumerate}
+	\item The value of $\int_{-1}^{1} x^2e^{x^3} dx$, where $\sbrak{t}$ denotes the greatest integer $\leq t$, is:
+		\begin{enumerate}
+			\item $\frac{\brak{e+1}}{3}$\\
+			\item $\frac{e-1}{3e}$\\
+			\item $\frac{e+1}{3e}$\\
+			\item $\frac{1}{3e}$
+		\end{enumerate}
+	\item When a missile is fired from a ship, the probability that it is intercepted is $\frac{1}{3}$ and the probability that the missile hits the target, given that it is not intercepted, is $\frac{3}{4}$. If three missiles are fired independently from the ship, then the probability that all three hit the target, is:
+		\begin{enumerate}
+			\item $\frac{1}{8}$\\
+			\item $\frac{1}{27}$\\
+			\item $\frac{3}{4}$\\
+			\item $\frac{3}{8}$
+		\end{enumerate}
+\end{enumerate}
+\section{Section-B}
+\begin{enumerate}
+	\item Let $A_1,A_2,A_3,\dots$ be squares such that for each $n\leq1$, the length of the side of $A_n$ equals the length of diagonal of $A_{n+1}$. If the length of $A_1$ is $12$ cm,then the smallest value of $n$ for which area of $A_n$ is less than one is .\\
+
+	\item The graphs of sine and cosine functions,intersect each other at a number of points of intersection, the two graphs enclose the same area $A$. then $A^4$ is equal to \\
+
+	\item The locus of the point of intersection of lines $\brak{\sqrt{3}}kx+ky-4\sqrt{3}= 0$ and $\sqrt{3}x-y-4\sqrt{3}k=0$ is a conic, whose eccentricity is \\
+
+	\item $A=\begin{bmatrix}
+			0 & -\tan{\frac{\theta}{2}}\\
+			\tan{\frac{\theta}{2}} & 0
+	\end{bmatrix}$ and $\brak{I_2+A}{\brak{I_2-A}}^-1= \begin{bmatrix}
+		a & -b\\
+		b & a
+	\end{bmatrix}$
+		, then $13\brak{a^2+b^2}$ is equal to \\
+		
+	\item Let $f\brak{x}$ be a polynomial of degree $6$ in $x$,in which the coefficient of $x^6$ is unity and it has extrema at $x=-1$ and $x=1$. If $\lim_{x\to 0} \frac{f\brak{x}}{x^3}=1$, then $5.f\brak{2}$ is equal to \\
+
+	\item The number of points at which the function $f\brak{x}=\abs{2x+1}-3\abs{x+2}+\abs{x^2+x-2}$, $x\in\mathbb{R}$ is not differentiable, is .
+		
+	\item If the system of equations \\
+		$kx+y+2z=1\\
+		3x-y-2z=2\\
+		-2x-2y-4z=3$\\
+		has infinitely many solutions, then $k$ is equal to \\
+
+	\item $\vec{a}=\hat{i}+2\hat{j}-\hat{k},\vec{b}=\hat{i}-\hat{j}$ and $\vec{c}=\hat{i}-\hat{j}-\hat{k}$ be three given vectors. If $\vec{r}$ is a vector such that $\vec{r}\times\vec{a}=\vec{c}\times\vec{a}$ and $\vec{r}\cdot\vec{b}=0$,then $\vec{r}\cdot\vec{a}$ is equal to \\
+
+	\item Let $A=\begin{bmatrix}
+			x & y & z \\
+			y & z & x \\
+			z & x & y 
+	\end{bmatrix}$, where $x, y$ and $z$ are real numbers such that $x+y+z>0$ and $xyz=2$. If $A^2=I_3$, then the value of $x^3+y^3+z^3$ is .\\
+
+        \item The total number of numbers, lying btween $100$ and $1000$ that can be formed with the digits $1, 2, 3, 4, 5$, if the repetition of digits is not allowed and numbers are divisible by either $3$ or $5$ is . 
+
+
+\end{enumerate}
+\end{document}
