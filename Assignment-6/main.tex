@@ -1,0 +1,174 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                             
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-6}
+\author{EE224BTECH11044 - Muthyala koushik
+}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{Section-A:JEE Main 2022-29 June-shift-2}
+\begin{enumerate}[start=1]
+	\item Let $\alpha$ be a root of the equation $1+x^2+x^4=0$. Then the value of ${\alpha}^{1011}+{\alpha}^{2022}-{\alpha}^{3033}$ is equal to:
+		\begin{enumerate}
+			\item $1$\\
+			\item $\alpha$\\
+			\item $1+\alpha$\\
+			\item $1+2\alpha$\\
+		\end{enumerate}
+	\item Let $\arg(z)$ represent the principal argument of the complex number $z$. Then, $\abs{z}=3$ and $\arg(z-1)-\arg(z+1)=\frac{\pi}{4}$ intersect:
+		\begin{enumerate}
+			\item Exactly at one point\\
+			\item Exactly at two points\\
+			\item Nowhere\\
+			\item At infinitely many points.\\
+		\end{enumerate}
+	\item Let $A=\begin{pmatrix} 2 & -1 \\ 0 & 2 \end{pmatrix}$. If $B=I-\nCr{5}{1}\brak{adjA}+\nCr{5}{2}{\brak{adjA}}^2-\dots-\nCr{5}{5}{\brak{adjA}}^5$, then the sum of all elements of the matrix $B$ is:
+			\begin{enumerate}
+				\item $-5$\\
+				\item $-6$\\
+				\item $-7$\\
+				\item $-8$\\
+			\end{enumerate}
+	\item The sum of the infinite series $1+\frac{5}{6}+\frac{12}{6^2}+\frac{22}{6^3}+\frac{35}{6^4}+\frac{51}{6^5}+\frac{70}{6^6}+\dots$ is equal to:
+		\begin{enumerate}
+		\item $\frac{425}{216}$\\
+		\item $\frac{429}{216}$\\
+		\item $\frac{288}{125}$\\
+		\item $\frac{280}{125}$\\
+		\end{enumerate}
+	\item The value of $\lim_{x\to 1}\frac{\brak{x^2-1}\sin^2{\pi x}}{x^4-2x^3+2x-1}$ is equal to:
+		\begin{enumerate}
+			\item $\frac{{\pi}^2}{6}$\\
+                        \item $\frac{{\pi}^2}{3}$\\
+                        \item $\frac{{\pi}^2}{2}$\\
+                        \item ${\pi}^2$\\
+		\end{enumerate}
+	\item Let $f:\mathbb{R}\to \mathbb{R}$ be a function defined by $f\brak{x}={\brak{x-3}}^{n_1}+{\brak{x-5}}^{n_2}$, $n_1,n_2\in \mathbb{N}$. Then, which of the following is NOT true?
+		\begin{enumerate}
+			\item For $n_1=3$, $n_2=4$, there exists $\alpha\in\brak{3,5}$ where $f$ attains local maxima.\\
+                        \item For $n_1=4$, $n_2=3$, there exists $\alpha\in\brak{3,5}$ where $f$ attains local maxima.\\
+                        \item For $n_1=3$, $n_2=5$, there exists $\alpha\in\brak{3,5}$ where $f$ attains local maxima.\\
+                        \item For $n_1=4$, $n_2=6$, there exists $\alpha\in\brak{3,5}$ where $f$ attains local maxima.\\
+		\end{enumerate}
+	\item Let $f$ be a real valued continuous function on $\sbrak{0,1}$ and $f\brak{x}=x+\int_{0}^{1}\brak{x-t}f\brak{t}dt$. Then, which of the following points $\brak{x,y}$ lies on the curve $y=f\brak{x}$?
+		\begin{enumerate}
+			\item $\brak{2,4}$\\
+			\item $\brak{1,2}$\\
+			\item $\brak{4,17}$\\
+			\item $\brak{6,8}$\\
+		\end{enumerate}
+	\item If $\int_{0}^{2}\brak{\sqrt{2x}-\sqrt{2x-x^2}}dx=\int_{0}^{1}\brak{1-\sqrt{1-y^2}-\frac{y^2}{2}}dy+\int_{1}^{2}\brak{2-\frac{y^2}{2}}dy+I$ then $I$ equals to:
+		\begin{enumerate}
+			\item $\int_{0}^{1}\brak{1+\sqrt{1-y^2}}dy$\\
+			\item $\int_{0}^{1}\brak{\frac{y^2}{2}-\sqrt{1-y^2}+1}dy$\\
+			\item $\int_{0}^{1}\brak{1-\sqrt{1-y^2}}dy$\\
+			\item $\int_{0}^{1}\brak{\frac{y^2}{2}+\sqrt{1-y^2}+1}dy$\\
+		\end{enumerate}
+	\item If $y=y\brak{x}$ is the solution of the differential equation $\brak{1+e^{2x}}\frac{dy}{dx}+2\brak{1+y^2}e^{x}=0$ and $y\brak{0}=0$, then $6\brak{y'\brak{0}+{\brak{y\brak{\log_{e}\sqrt{3}}}}^2}$ is equal to:
+		\begin{enumerate}
+			\item $2$\\
+			\item $-2$\\
+			\item $-4$\\
+			\item $-1$\\
+		\end{enumerate}
+	\item Let $P:y^2=4ax$, $a>0$ be a parabola with focus $S$. let the tangents to the parabola P make an angle of $\frac{\pi}{4}$ with the line $y=3x+5$ touch the parabola at $A$ and $B$. Then the value of $a$ for which $A,B$ and $S$ are collinear is:
+		\begin{enumerate}
+			\item $8$ only\\
+			\item $2$ only\\
+			\item $\frac{1}{4}$ only\\
+			\item any $a>0$\\
+		\end{enumerate}
+	\item Let a triangle $ABC$ be inscribed in the circle $x^2-\sqrt{2}\brak{x+y}+y^2=0$ such that $\angle BAC=\frac{\pi}{2}$. If the length of side $AB$ is $\sqrt{2}$, then the area of the $\triangle ABC$ is equal to:
+		\begin{enumerate}
+			\item $\frac{\brak{\sqrt{2}+\sqrt{6}}}{3}$\\
+			\item $\frac{\brak{\sqrt{6}+\sqrt{3}}}{2}$\\
+			\item $\frac{\brak{3+\sqrt{3}}}{4}$\\
+			\item $\frac{\brak{\sqrt{6}+2\sqrt{3}}}{4}$\\
+		\end{enumerate}
+	\item Let $\frac{x-2}{3}=\frac{y+1}{-2}=\frac{z+3}{-1}$ lie on the plane $px-qy+z=5$, for some $p, q\in\mathbb{R}$. The shortest distance of the plane from the origin is:
+		\begin{enumerate}
+			\item $\sqrt{\frac{3}{109}}$\\
+			\item $\sqrt{\frac{5}{142}}$\\
+			\item $\sqrt{\frac{5}{71}}$\\
+			\item $\sqrt{\frac{1}{142}}$\\
+		\end{enumerate}
+	\item The distance of the origin from the centroid of the triangle whose two sides have the equations $x-2y+1=0$ and $2x-y-1=0$ and whose orthocenter is $\brak{\frac{7}{3},\frac{7}{3}}$ is:
+		\begin{enumerate}
+			\item $\sqrt{2}$\\
+			\item $2$\\
+			\item $2\sqrt{2}$\\
+			\item $4$\\
+		\end{enumerate}
+	\item Let $\vec{Q}$ be the mirror image of the point $\vec{P}\brak{1, 2, 1}$ with respect to the plane $x+2y+2z=16$. Let $T$ be a plane passing through the point $\vec{Q}$ and contains the line $\vec{r}=-\hat{k}+\lambda\brak{\hat{i}+\hat{j}+2\hat{k}},\lambda\in\mathbb{R}$. Then, which of the following points lies on $T$?
+		\begin{enumerate}
+			\item $\brak{2,1,0}$\\
+			\item $\brak{1,2,1}$\\
+			\item $\brak{1,2,2}$\\
+			\item $\brak{1,3,2}$\\
+		\end{enumerate}
+	\item Let $\vec{A},\vec{B},\vec{C}$ be three points whose position vectors respectively are:\\
+		$\vec{a}=\hat{i}+4\hat{j}+3\hat{k}$\\
+		$\vec{b}=2\hat{i}+\alpha\hat{j}+4\hat{k},\alpha\in\mathbb{R}$\\
+		$\vec{c}=3\hat{i}-2\hat{j}+5\hat{k}$\\
+		If $\alpha$ is the smallest positive integer for which $\vec{a},\vec{b},\vec{c}$ are non-collinear, then the length of the median, in $\triangle\vec{ABC}$, through $\vec{A}$ is:
+		\begin{enumerate}
+			\item $\frac{\sqrt{82}}{2}$\\
+			\item $\frac{\sqrt{62}}{2}$\\
+			\item $\frac{\sqrt{69}}{2}$\\
+			\item $\frac{\sqrt{66}}{2}$\\
+		\end{enumerate}
+
+
+
+\end{enumerate}
+\end{document}
