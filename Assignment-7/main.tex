@@ -1,0 +1,178 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                             
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-7}
+\author{EE224BTECH11044 - Muthyala koushik
+}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{Section-A:JEE Main 2022-29 June-shift-2}
+\begin{enumerate}[start=1]
+	\item The set of all $\alpha$, for which the vectors $\vec{a}=\alpha t\hat{i}+6\hat{j}-3\hat{k}$ and $\vec{b}=t\hat{i}-2\hat{j}-2\alpha t\hat{k}$ are inclined at an obtuse angle for all $t\in\mathbb{R}$, is
+		\begin{enumerate}
+			\item $\brak{-\frac{4}{3},1}$\\
+			\item $\lbrak{-\frac{4}{3}},\rsbrak{0}$\\
+			\item $\lsbrak{0},\rbrak{1}$\\
+			\item $\lbrak{-2},\rsbrak{0}$\\
+		\end{enumerate}
+	\item Let $\vec{P}\brak{x,y,z}$ be a point in the first octant, whose projection in the $xy$-plane is the point $\vec{Q}$. Let $OP=\gamma$; the angle between $OQ$ and the positive $x$-axis be $\theta$; and the angle between $OP$ and the positive $z$-axis be $\phi$, where $\vec{O}$ is the origin. Then the distance of $\vec{P}$ from $x$-axis is 
+		\begin{enumerate}
+			\item $\gamma\sqrt{1+\cos^2{\phi}\sin^2{\theta}}$\\
+			\item $\gamma\sqrt{1-\sin^2{\phi}\cos^2{\theta}}$\\
+			\item $\gamma\sqrt{1+\cos^2{\theta}\sin^2{\phi}}$\\
+			\item $\gamma\sqrt{1-\sin^2{\theta}\cos^2{\phi}}$\\
+		\end{enumerate}
+	\item Let the circles $C_1:{\brak{x-\alpha}}^2+{\brak{y-\beta}}^2={r_1}^2$ and $C_2:{\brak{x-8}}^2+{\brak{y-\frac{15}{2}}}^2={r_2}^2$ touch each other externally at the point $\brak{6,6}$. If the point $\brak{6,6}$ divides the line segment joining the centers of the circles $C_1$ and $C_2$ internally in the ratio $2:1$, then $\brak{\alpha+\beta}+4\brak{{r_1}^2+{r_2}^2}$ equals 
+		\begin{enumerate}
+			\item $110$\\
+			\item $125$\\
+			\item $145$\\
+			\item $130$\\
+		\end{enumerate}
+	\item Let $I\brak{x}=\int\frac{6}{\sin^2{x}{\brak{1-\cot{x}}}^2}dx$. If $I\brak{0}=3$, then $I\brak{\frac{\pi}{12}}$ is equal to 
+		\begin{enumerate}
+			\item $2\sqrt{3}$\\
+			\item $6\sqrt{3}$\\
+			\item $\sqrt{3}$\\
+			\item $3\sqrt{3}$\\
+		\end{enumerate}
+	\item If $\sin{x}=-\frac{3}{5}$, where $\pi<x<\frac{3\pi}{2}$, then $80\brak{\tan^2{x}-\cos{x}}$ is equal to 
+		\begin{enumerate}
+			\item $19$\\
+			\item $18$\\
+			\item $109$\\
+			\item $108$\\
+		\end{enumerate}
+	\item Let $z$ be a complex number such that $\abs{z+2}=1$ and $\operatorname{Im}\brak{\frac{z+1}{z+2}}=\frac{1}{5}$. Then the value of $\abs{\operatorname{Re}\brak{\overline{z+2}}}$ is
+		\begin{enumerate}
+			\item $\frac{2\sqrt{6}}{5}$\\
+			\item $\frac{24}{5}$\\
+			\item $\frac{\sqrt{6}}{5}$\\
+			\item $\frac{1+\sqrt{6}}{5}$\\
+		\end{enumerate}
+	\item Let $f\brak{x}=4\cos^3{x}+3\sqrt{3}\cos^2{x}-10$. The number of points of local maxima of $f$ in interval $\brak{0,2\pi}$ is
+		\begin{enumerate}
+			\item $4$\\
+			\item $1$\\
+			\item $2$\\
+			\item $3$\\
+		\end{enumerate}
+	\item For the function $f\brak{x}=\brak{\cos{x}}-x+1$, $x\in\mathbb{R}$, between the following two statements\\
+		$\brak{S_1}$ $f\brak{x}=0$ for only one value of $x$ in $\sbrak{0,\pi}.$\\
+		$\brak{S_2}$ $f\brak{x}$ is decreasing in $\sbrak{0,\frac{\pi}{2}}$ and increasing in \sbrak{\frac{\pi}{2},\pi}.\\
+		\begin{enumerate}
+			\item Both $\brak{S_1}$ and $\brak{S_2}$ are incorrect.\\
+			\item Only $\brak{S_1}$ is correct.\\
+			\item Both $\brak{S_1}$ and $\brak{S_2}$ are correct.\\
+			\item Only $\brak{S_2}$ is correct.\\
+		\end{enumerate}
+	\item Let $A=\begin{bmatrix}
+			2 & a & 0 \\
+			1 & 3 & 1 \\
+			0 & 5 & b 
+			\end{bmatrix}$. If $A^3=4A^2-A-21I$, where $I$ is the identity matrix of order $3\times3$, then $2a+3b$ is equal to
+			\begin{enumerate}
+				\item $-10$\\
+				\item $-9$\\
+				\item $-12$\\
+				\item $-13$\\
+			\end{enumerate}
+	\item Let $\sbrak{t}$ be the greatest integer less than or equal to $t$. Let $A$ be the set of all prime factors of $2310$ and $f:A\to\mathbb{Z}$ be the function $f\brak{x}=\sbrak{\log_2\brak{x^2+\sbrak{\frac{x^3}{5}}}}$. The number of one-to-one functions from $A$ to the range of $f$ is 
+		\begin{enumerate}
+			\item $25$\\
+			\item $120$\\
+			\item $20$\\
+			\item $24$\\
+		\end{enumerate}
+	\item Let $y=y\brak{x}$ be the solution of the differential equation $\brak{1+y^2}e^{\tan{x}}dx+\cos^2{x}\brak{1+e^{2\tan{x}}}dy=0,y\brak{0}=1$. Then $y\brak{\frac{\pi}{4}}$ is equal to
+		\begin{enumerate}
+			\item $\frac{1}{e^2}$\\
+			\item $\frac{1}{e}$\\
+			\item $\frac{2}{e}$\\
+			\item $\frac{2}{e^2}$\\
+		\end{enumerate}
+	\item The equation of two sides $AB$ and $AC$ of a triangle $ABC$ are $4x+y=14$ and $3x-2y=5$, respectively. The point $\brak{2,-\frac{4}{3}}$ divides the third side $BC$ internally in the ratio $2:1$. The equation of the side $BC$ is
+		\begin{enumerate}
+			\item $x-3y-6=0$\\
+			\item $x-6y-10=0$\\
+			\item $x+3y+2=0$\\
+			\item $x+6y+6=0$\\
+		\end{enumerate}
+	\item If the shortest distance between the lines
+		$$L_1:\vec{r}=\brak{2+\lambda}\hat{i}+\brak{1-3\lambda}\hat{j}+\brak{3+4\lambda}\hat{k},    \lambda\in\mathbb{R}$$
+		$$L_2:\vec{r}=2\brak{1+\mu}\hat{i}+3\brak{1+\mu}\hat{j}+\brak{5+\mu}\hat{k},\in\mathbb{R}$$
+		is $\frac{m}{\sqrt{n}}$, where $\gcd\brak{m,n}=1$, then the value of $m+n$ equals 
+		\begin{enumerate}
+			\item $377$\\
+			\item $390$\\
+			\item $387$\\
+			\item $384$\\
+		\end{enumerate}
+	\item If the set $R=\cbrak{\brak{a,b}:a+5b=42,a,b\in\mathbb{R}}$ has $m$ elements and $\sum_{n=1}^{m}\brak{1-i^{n!}}=x+iy$, where $i=\sqrt{-1}$, then the value of $m+x+y$ is
+		\begin{enumerate}
+			\item $8$\\
+			\item $5$\\
+			\item $4$\\
+			\item $12$\\
+		\end{enumerate}
+	\item The value of $k\in\mathbb{N}$ for which the integral $I_n=\int_{0}^{1}{\brak{1-x^k}}^ndx$, $n\in\mathbb{N}$, satisfies $147I_{20}=148I_{21}$ is
+		\begin{enumerate}
+			\item $8$\\
+			\item $10$\\
+			\item $7$\\
+			\item $14$\\
+		\end{enumerate}
+
+
+\end{enumerate}
+\end{document}
