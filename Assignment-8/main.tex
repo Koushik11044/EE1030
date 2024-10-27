@@ -1,0 +1,452 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                             
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usetikzlibrary{patterns}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-8}
+\author{EE224BTECH11044 - Muthyala koushik
+}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{2007-CE 35-51}
+\begin{enumerate}[start=35]
+	\item The right triangular truss is made of members having equal cross sectional area of $1550$ $mm^{2}$ and Young's modulus of $2\times{10}^5$ MPa. The horizontal deflection of the joint Q is
+
+\begin{center}
+  \begin{circuitikz}
+    % Nodes
+    \coordinate (P) at (0,0);   
+    \coordinate (R) at (4.5,0);  
+    \coordinate (Q) at (4.5,6);  
+    % Truss members
+    \draw (P) -- (R);  
+    \draw (R) -- (Q);  
+    \draw (P) -- (Q);  
+    % Support at P (pin with triangle)
+    \draw[fill=black] (P) circle(2pt);   
+    \draw (0,0) to[short] (0.2,-0.2);
+    \draw (0,0) to[short] (-0.2,-0.2);
+    \draw (0.2,-0.2) to[short] (-0.2,-0.2);
+    \draw (0,-0.2) to[short] (0,-0.4);
+    \draw (0.2,-0.2) to[short] (0.2,-0.4);
+    \draw (-0.2,-0.2) to[short] (-0.2,-0.4);
+    \draw (0.4,-0.4) to[short] (-0.4,-0.4);
+    % Support at R (roller with triangle)
+    \draw[fill=black] (R) circle(2pt);  
+    \draw (4.5,0) to[short] (4.3,-0.2);
+    \draw (4.5,0) to[short] (4.7,-0.2);
+    \draw (4.3,-0.2) to[short] (4.7,-0.2);
+    % Force at Q
+    \draw[thick,->,>=Stealth] (Q) -- ++(1,0) node[right] {\(135 \, \text{kN}\)};
+    % Dimensions
+    \draw[<->,>=Stealth] (P) ++(0,-0.8) -- ++(4.5,0) node[midway,below] {4.5 m}; 
+    \draw[<->,>=Stealth] (R) ++(0.6,0) -- ++(0,6) node[midway,right] {6 m};     
+    % Labels
+    \node[left] at (P) {P};
+    \node[right] at (R) {R};
+    \node[above] at (Q) {Q};
+  
+\end{circuitikz}
+\end{center}
+		\begin{enumerate}
+			\item $2.47$ mm
+			\item $10.25$ mm
+			\item $14.31$ mm
+			\item $15.68$ mm\\
+		\end{enumerate}
+	\item The influence line diagram \brak{ILD} shown is for the member\\
+\begin{center}
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (7,16) to[short] (5.5,14.5);
+\draw (7,16) to[short] (7,14.5);
+\draw (7,16) to[short] (8.5,14.5);
+\draw (8.5,16) to[short] (8.5,14.5);
+\draw (8.5,16) to[short] (10,14.5);
+\draw (10,16) to[short] (10,14.5);
+\draw (10,14.5) to[short] (11.5,16);
+\draw (11.5,16) to[short] (11.5,14.5);
+\draw (11.5,14.5) to[short] (13,16);
+\draw (13,16) to[short] (13,14.5);
+\draw (13,16) to[short] (14.5,14.5);
+\draw (7,16) to[short] (13,16);
+\draw (5.5,14.5) to[short] (14.5,14.5);
+\node [font=\normalsize] at (7,16.25) {P};
+\node [font=\normalsize] at (8.5,16.25) {Q};
+\node [font=\normalsize] at (7,14.25) {R};
+\node [font=\normalsize] at (8.5,14.25) {S};
+\draw (5.5,14.5) to[short] (5.7,14.3);
+\draw (5.5,14.5) to[short] (5.3,14.3);
+\draw (5.3,14.3) to[short] (5.7,14.3);
+\draw (14.5,14.5) to[short] (14.7,14.3);
+\draw (14.5,14.5) to[short] (14.3,14.3);
+\draw (14.7,14.3) to[short] (14.3,14.3);
+\draw (14.3,14.1) to[short] (14.3,14.3);
+\draw (14.5,14.1) to[short] (14.5,14.3);
+\draw (14.7,14.1) to[short] (14.7,14.3);
+\draw (14.2,14.1) to[short] (14.8,14.1);
+\end{circuitikz}\\
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (2.75,14) to[short] (14.75,14);
+\draw (5,14) to[short] (5,13.5);
+\draw (7.5,15.25) to[short] (7.5,14);
+\draw (5,13.5) to[short] (7.5,15.25);
+\draw (7.5,15.25) to[short] (14.75,14);
+\draw (2.75,14) to[short] (5,13.5);
+\draw [->, >=Stealth] (3.75,13) -- (4.5,13.75);
+\node [font=\normalsize] at (3.25,12.75) {compression};
+\node [font=\normalsize] at (11,13.5) {ILD};
+\draw [->, >=Stealth] (11.25,15.25) -- (10.25,14.5);
+\node [font=\normalsize] at (11.25,15.5) {tension};
+\end{circuitikz}
+\end{center}
+\begin{enumerate}
+	\item PS
+	\item RS
+	\item PQ
+	\item QS\\
+\end{enumerate}
+        \item Consider the following statements:\\
+	\uppercase\expandafter{\romannumeral 1}. The compressive strength of concrete decreases with increase in water-cement ratio of the concrete mix.\\
+	\uppercase\expandafter{\romannumeral 2}. Water is added to the concrete mix for hydration of cement and workability.\\
+	\uppercase\expandafter{\romannumeral 3}. Creep and shrinkage of concrete are independent of the water-cement ratio in the concrete mix.\\
+	The TRUE statements are
+	\begin{enumerate}
+		\item \uppercase\expandafter{\romannumeral 1} and \uppercase\expandafter{\romannumeral 2}
+		\item \uppercase\expandafter{\romannumeral 1},\uppercase\expandafter{\romannumeral 2} and \uppercase\expandafter{\romannumeral 3}
+		\item \uppercase\expandafter{\romannumeral 2} and \uppercase\expandafter{\romannumeral 3}
+		\item only \uppercase\expandafter{\romannumeral 2}\\
+	\end{enumerate}
+            \item The percentage loss of prestress due to anchorage slip of $3$ mm in a concrete beam of length $30$ m which is post-tensioned by a tendon with an initial stress of $1200$ $N/mm^2$ and modulus of elasticity equal to $2.1\times{10}^{5}$ $N/mm^2$ is 
+		    \begin{enumerate}
+			    \item $0.0175$
+			    \item $0.175$
+			    \item $1.75$
+			    \item $17.5$\\
+		    \end{enumerate}
+	    \item A concrete beam of rectangular cross-section of size $120$ mm (width) and $200$ mm (depth) is prestressed by a straight tendon to an effective force of $150$ kN at an eccentricity of $20$ mm (below the centroidal axis in the depth direction). The stresses at the top and bottom fibres of the section are
+		    \begin{enumerate}
+			    \item $2.5$ $N/mm^2$ (compression), $10$ $N/mm^2$ (compression)
+			    \item $10$ $N/mm^2$ (tension), $2.5$ $N/mm^2$ (compression)
+			    \item $3.75$ $N/mm^2$ (tension), $3.75$ $N/mm^2$ (compression)
+			    \item $2.75$ $N/mm^2$ (compression), $3.75$ $N/mm^2$ (compression)\\
+		    \end{enumerate}
+
+        \item Consider the following statements:\\
+	\uppercase\expandafter{\romannumeral 1}. Modulus of elasticity of concrete increases with increase in compressive strength of concrete.\\
+	\uppercase\expandafter{\romannumeral 2}. Brittleness of concrete increase with decrease in compressive strength of concrete.\\
+	\uppercase\expandafter{\romannumeral 3}. Shear strength of concrete increases with increase in compressive strength of concrete.\\
+	The TRUE statements are
+	\begin{enumerate}
+		\item \uppercase\expandafter{\romannumeral 2} and \uppercase\expandafter{\romannumeral 3}
+		\item \uppercase\expandafter{\romannumeral 1},\uppercase\expandafter{\romannumeral 2} and \uppercase\expandafter{\romannumeral 3}
+		\item \uppercase\expandafter{\romannumeral 1} and \uppercase\expandafter{\romannumeral 2}
+		\item \uppercase\expandafter{\romannumeral 1} and \uppercase\expandafter{\romannumeral 3}\\
+	\end{enumerate}
+          \item A steel flat of rectangular section of size $70\times6$ mm is connected to a gusset plate by three bolts each having a shear capacity of $15$ kN in holes having diameter $11.5$ mm. If the allowable tensile stress in the flat is $150$ MPa, the maximum tension that can be applied to flat is\\
+\begin{center}
+\begin{circuitikz}
+    % Draw the rectangular section
+    \draw (0, -1.5) rectangle (4, 1.5);
+
+    % Draw the tapered section
+    \draw (4, -1.5) -- (6, -2.5);
+    \draw (4, 1.5) -- (6, 2.5);
+     \draw[pattern=north east lines] 
+     
+        (6, -2.5) -- (6.5, -2.5) -- (6.5, 2.5) -- (6, 2.5); % Added 'cycle' to close the shape
+    % Draw the force T
+    \draw[<-, >=Stealth] (-1, 0) -- (0.5, 0) node[midway, above] {$T$};
+
+
+    % Draw the bolts with the middle bolt slightly shifted to the left
+    \draw (3.5, 1) circle(0.1);   % Top bolt
+    \draw (2, 0) circle(0.1);   % Middle bolt (slightly left)
+    \draw (3.5, -1) circle(0.1);  % Bottom bolt
+
+    % Add dotted construction lines for alignment
+    \draw[dashed] (4, 1.5) -- (5, 1.5);
+    \draw[dashed] (2, 0) -- (5, 0);
+    \draw[dashed] (4, -1.5) -- (5, -1.5);
+    \draw[dashed] (3, -1) -- (5, -1);
+    \draw[dashed] (3, 1) -- (5, 1);
+    \draw[dashed] (3.5, 1) -- (3.5, -2);
+    \draw[dashed] (2, 1) -- (2, -2);
+
+    % Add dimension lines
+    \draw[<->, >=Stealth] (4.2, -1) -- (4.2, 0) node[midway, right] {20};
+    \draw[<->, >=Stealth] (4.2, 0) -- (4.2, 1) node[midway, right] {20};
+    \draw[<->, >=Stealth] (2, -1.7) -- (3.5, -1.7) node[midway, below] {35};
+    \draw[<->, >=Stealth] (4.2, -1) -- (4.2, -1.5) node[midway, right] {15};
+    \draw[<->, >=Stealth] (4.2, 1) -- (4.2, 1.5) node[midway, right] {15};
+\end{circuitikz}
+\end{center}
+                  \begin{enumerate}
+			  \item $42.3$ kN
+			  \item $52.65$ kN
+			  \item $59.5$ kN
+			  \item $63.0$ kN\\
+		  \end{enumerate}
+	  \item A bracket connection is made with four bolts of $10$ mm diameter and supports a load of $10$ kN at an eccentricity of $100$ mm. The maximum force to be resisted by any bolt will be \\
+\begin{center}
+\begin{circuitikz}
+	\tikzstyle{every node}=[font=\large]
+    % Draw the rectangular plate
+    \draw[thick] (0, 0) -- (4, 0);
+    \draw[thick] (0, 0) -- (0, 3) -- (4, 3);
+    \draw[thick] (0, -0.5) -- (0, 3.5);
+	\draw[dashed] (4, -0.5)--(4, 3);
+
+    % Draw the bolts as small circles with + signs
+   
+    \draw (1, 0.75) circle(0.1);   % Top bolt
+    \draw (3, 0.75) circle(0.1);   % Top bolt
+    \draw (1, 2.25) circle(0.1);   % Top bolt
+    \draw (3, 2.25) circle(0.1);   % Top bolt
+
+	\draw[dashed] (1, -0.5)--(1, 2.5);
+	\draw[dashed] (3, -0.5)--(3, 2.5);
+	\draw[dashed] (2, -0.5)--(2, 3.5);
+	\draw[dashed] (-0.5, 0.75)--(3.1, 0.75);
+	\draw[dashed] (-0.5, 1.5)--(3.1, 1.5);
+	\draw[dashed] (-0.5, 2.25)--(3.1, 2.25);
+
+    % Add dimension lines for the bolts' spacing
+    \draw[<->,thick, >=Stealth] (1, -0.3) -- (2, -0.3) node[midway, below] {40};
+    \draw[<->,thick, >=Stealth] (-0.3, 1.5) -- (-0.3, 2.25) node[midway, left] {30};
+
+    % Dimension lines for the outer edge spacing
+    \draw[<->, thick, >=Stealth] (-0.3, 0.75) -- (-0.3, 1.5) node[midway, left] {30};
+    \draw[<->, thick, >=Stealth] (2, -0.3) -- (3, -0.3) node[midway, below] {40};
+
+    % Eccentricity and applied force
+    \draw[dashed, thick, <->, >=Stealth] (2, 3.3) -- (6, 3.3) node[midway, above] {$e = 100$ mm};
+    \draw[->, >=stealth] (6, 4) -- (6, 3) node[midway, right] {$P = 10$ kN};
+
+    
+    % Add angled line on the right side to match the image
+	\draw[thick] (4, 0) -- (6, 2.25) -- (6, 3) -- (4, 3);
+
+\end{circuitikz}
+\end{center}
+		  \begin{enumerate}
+			  \item $5$ kN
+			  \item $6.5$ kN
+			  \item $6.8$ kN
+			  \item $7.16$ kN\\
+		  \end{enumerate}
+	  \item The plastic collapse load $W_p$ for the propped cantilever supporting two point loads as shown in figure in terms of plastic moment capacity, $M_p$, is given by\\
+\begin{center}
+\begin{circuitikz}[xscale=1, yscale=1, rotate=-90]
+\tikzstyle{every node}=[font=\large]
+\draw [->, >=Stealth] (6.5,8.5) -- (7.75,8.5);
+\draw [->, >=Stealth] (6.5,10.75) -- (7.75,10.75);
+\draw [->, >=Stealth] (9,12.75) -- (7.75,12.75);
+\draw [line width=0.5pt](7.75,12.75) to (7.75,7) node[cground,rotate=-90]{};
+\node [font=\large, rotate around={0:(0,0)}] at (7.25,7.75) {\textit{L/3}};
+\node [font=\large, rotate around={0:(0,0)}] at (7.25,9.75) {\textit{L/3}};
+\node [font=\large, rotate around={0:(0,0)}] at (7.25,11.75) {\textit{L/3}};
+\node [font=\large, rotate around={0:(0,0)}] at (8.75,13.25) {\textit{R}};
+\node [font=\large, rotate around={0:(0,0)}] at (6.5,11.25) {W};
+\node [font=\large, rotate around={0:(0,0)}] at (6.5,9) {W};
+\end{circuitikz}
+\end{center}
+		  \begin{enumerate}
+			  \item $3M_p/L$
+			  \item $4M_p/L$
+			  \item $5M_p/L$
+			  \item $6M_p/L$\\
+		  \end{enumerate}
+	  \item Sieve analysis on a dry soil sample of mass $1000$ g showed that $980$ g and $270$ g of soil pass through $4.75$ mm and $0.075$ mm sieve, respectively. The liquid limit and plastic limits of the soil fraction passingg through $425\mu$ sieves are $40\%$ and $18\%$, respectively. The soil may be classified as
+		  \begin{enumerate}
+			  \item SC
+			  \item MI
+			  \item CI
+			  \item SM\\
+		  \end{enumerate}
+	  \item The water content of a saturated soil and the specific gravity of soil solids were found to be $30\%$ and $2.70$, respectively. Assuming the unit weight of water to be $10$ $kN/m^3$, the saturated unit weight $\brak{kN/m^3}$ and the void ratio of the soil are
+		  \begin{enumerate}
+			  \item $19.4,0.81$
+			  \item $18.5,0.30$
+			  \item $19.4,0.45$
+			  \item $18.5,0.45$\\
+		  \end{enumerate}
+	  \item The factor of safety of an infinite soil slope shown in the figure having the properties $c=0,\phi=30^\circ,\gamma_{dry}=16kN/m^3$ and $\gamma_{sat}=20kN/m^3$ is approximately equal to\\
+		  \begin{center}
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (5.25,14) to[short] (9.5,16.5);
+\draw (5.5,13.25) to[short] (9.75,15.75);
+\draw (6.070,11.247) to[short] (10.75,14);
+\draw (5.5,13.25) to[short] (9.75,15.75);
+\draw (7.9,14.5) to[short] (9,15.15);
+\draw (8.2,14.4) to[short] (8.9,14.85);
+\draw (8.4,14.3) to[short] (8.8,14.55);
+\draw (8.6,14.2) to[short] (8.75,14.32);
+    \draw[<->, thick, >=Stealth] (6.5, 11.5) -- (6.5, 14.8) node[midway, left] {10 cm};
+    \draw[<->, thick, >=Stealth] (7.5, 12.2) -- (7.5, 14.3) node[midway, right] {8 cm};
+\draw (8.45,15.05) to[short] (8.6,15.5);
+\draw (8.45,15.05) to[short] (8.1,15.25);
+\draw (8.1,15.25) to[short] (8.6,15.5);
+
+\draw (7.56,12.13) to[short] (10,12.13);
+  \draw (7.56,12.13) -- (10,12.13) node[midway,above] {$30^\circ$};
+\draw (7,11.81) to[short] (6.8,11.4);
+\draw (7.56,12.13) to[short] (7,11.4);
+\draw (8.09,12.44) to[short] (7.5,11.7);
+\draw (8.63,12.75) to[short] (8.09,12);
+\draw (9.69,13.38) to[short] (9.16,12.6);
+\draw (10.22,13.69) to[short] (9.69,12.9);
+\draw (10.75,14) to[short] (10.22,13.2);
+\end{circuitikz}
+		  \end{center}
+
+                 \begin{enumerate}
+			  \item $0.70$
+			  \item $0.80$
+			  \item $1.00$
+			  \item $1.20$\\
+		  \end{enumerate}
+	  \item Match the following groups.\\
+		  \begin{tabular}{ll} 
+			  Group-I & Group-II \\
+			  P Constant head permeability test & 1 Pile foundation \\
+			  Q Consolidation test & 2 Specific gravity \\
+			  R Pycnometer test & 3 Clay soil \\
+			  S Negative skin friction & 4 Sand \\
+		  \end{tabular}\\
+		  \begin{enumerate}
+			  \item P-4, Q-3, R-2, S-1
+			  \item P-4, Q-2, R-3, S-1
+			  \item P-3, Q-4, R-2, S-1
+			  \item P-4, Q-1, R-2, S-3\\
+		  \end{enumerate}
+	  \item The bearing capacity of a rectangular footing of plan dimensions $1.5$ m
+$\times$ $3$ m resting on the surface of a sand deposit was estimated as $600$ $kN/m^2$ when the water table is far below the base of the footing. The bearing capacities in $kN/m^3$ when the water level rises to depths of $3$ m, $1.5$ m and $0.5$ m below the base of the footing are 
+                  \begin{enumerate}
+			  \item $600,600,400$
+			  \item $600,450,350$
+			  \item $600,500,250$
+			  \item $600,400,250$\\
+		  \end{enumerate}
+	  \item What is the ultimate capacity in kN of the pile group shown in the figure assuming the group to fail as a single block?\\
+		  \begin{center}
+		  \begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (4.75,15) to[short] (12,15);
+\draw  (6.5,16) rectangle (10,15.75);
+\draw  (7.25,15.75) rectangle (7.5,12.5);
+\draw  (9,15.75) rectangle (9.25,12.5);
+\draw [->, >=Stealth] (10.25,14.5) -- (9.5,14);
+\draw (4.75,14.75) to[short] (5,15);
+\draw (5,14.75) to[short] (5.25,15);
+\draw (5.25,14.75) to[short] (5.5,15);
+\draw (5.5,14.75) to[short] (5.75,15);
+\draw (5.75,14.75) to[short] (6,15);
+\draw (6,14.75) to[short] (6.25,15);
+\draw (10,14.75) to[short] (10.25,15);
+\draw (10.25,14.75) to[short] (10.5,15);
+\draw (10.5,14.75) to[short] (10.75,15);
+\draw (10.75,14.75) to[short] (11,15);
+\draw (11,14.75) to[short] (11.25,15);
+\draw (11.25,14.75) to[short] (11.5,15);
+\draw (6.90,12.5) to[short] (7.10,12.5);
+\node [font=\normalsize] at (12,14.5) {0.4m diameter piles};
+\draw  (7.25,12) circle (0.1cm);
+\draw  (7.25,10.5) circle (0.1cm);
+\draw  (9.25,12) circle (0.1cm);
+\draw  (9.25,10.5) circle (0.1cm);
+\draw [<->, >=Stealth] (9.75,12) -- (9.75,10.5);
+\draw (9.5,12) to[short] (10,12);
+\draw (9.5,10.5) to[short] (10,10.5);
+\draw (9.25,10.25) to[short] (9.25,9.75);
+\draw (7.25,10.25) to[short] (7.25,9.75);
+\draw [<->, >=Stealth] (7.25,10) -- (9.25,10);
+\node [font=\normalsize] at (10.5,11.25) {1.2m c/c};
+\node [font=\normalsize] at (8.25,9.75) {1.2m c/c};
+\draw [<->, >=Stealth] (7,15) -- (7,12.5);
+\node [font=\normalsize] at (11.75,13.5) {Clay soil};
+\node [font=\normalsize] at (12,13) {$c_u = 40 kN/m^2$};
+\node [font=\normalsize] at (11.5,12.5) {$\phi_u= 0^\circ$};
+\node [font=\normalsize] at (6.5,13.75) {10m};
+\end{circuitikz}
+		  \end{center}
+		  \begin{enumerate}
+			  \item $921.6$
+			  \item $1177.6$
+			  \item $2438.6$
+			  \item $3481.6$\\
+		  \end{enumerate}
+	  \item A horizontal water jet with a velocity of $10$ m/s and cross sectional area of $10$ $mm^2$ strikes a flat plate held normal to flow direction. The density of water is $1000$ $kg/m^3$. The total force on the plate due to the jet is
+		  \begin{enumerate}
+			  \item $100$ N
+			  \item $10$ N
+			  \item $1$ N
+			  \item $0.1$ N\\
+		  \end{enumerate}
+	  \item A $1:50$ scale model of a spillway is to be tested in the laboratory. The discharge in the prototype is $1000$ $m^3/s$. The discharge to be maintained in the model test is
+		  \begin{enumerate}
+			  \item $0.057$ $m^3/s$
+			  \item $0.08$ $m^3/s$
+			  \item $0.57$ $m^3/s$
+			  \item $5.7$ $m^3/s$
+		  \end{enumerate}
+
+
+
+
+\end{enumerate}
+
+\end{document}
