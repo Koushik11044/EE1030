@@ -1,0 +1,35 @@
+ \begin{circuitikz}
+    % Nodes
+    \coordinate (P) at (0,0);   
+    \coordinate (R) at (4.5,0);  
+    \coordinate (Q) at (4.5,6);  
+    % Truss members
+    \draw (P) -- (R);  
+    \draw (R) -- (Q);  
+    \draw (P) -- (Q);  
+    % Support at P (pin with triangle)
+    \draw[fill=black] (P) circle(2pt);   
+    \draw (0,0) to[short] (0.2,-0.2);
+    \draw (0,0) to[short] (-0.2,-0.2);
+    \draw (0.2,-0.2) to[short] (-0.2,-0.2);
+    \draw (0,-0.2) to[short] (0,-0.4);
+    \draw (0.2,-0.2) to[short] (0.2,-0.4);
+    \draw (-0.2,-0.2) to[short] (-0.2,-0.4);
+    \draw (0.4,-0.4) to[short] (-0.4,-0.4);
+    % Support at R (roller with triangle)
+    \draw[fill=black] (R) circle(2pt);  
+    \draw (4.5,0) to[short] (4.3,-0.2);
+    \draw (4.5,0) to[short] (4.7,-0.2);
+    \draw (4.3,-0.2) to[short] (4.7,-0.2);
+    % Force at Q
+    \draw[thick,->,>=Stealth] (Q) -- ++(1,0) node[right] {\(135 \, \text{kN}\)};
+    % Dimensions
+    \draw[<->,>=Stealth] (P) ++(0,-0.8) -- ++(4.5,0) node[midway,below] {4.5 m}; 
+    \draw[<->,>=Stealth] (R) ++(0.6,0) -- ++(0,6) node[midway,right] {6 m};     
+    % Labels
+    \node[left] at (P) {P};
+    \node[right] at (R) {R};
+    \node[above] at (Q) {Q};
+  
+\end{circuitikz}
+

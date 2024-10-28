@@ -1,0 +1,45 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (7,16) to[short] (5.5,14.5);
+\draw (7,16) to[short] (7,14.5);
+\draw (7,16) to[short] (8.5,14.5);
+\draw (8.5,16) to[short] (8.5,14.5);
+\draw (8.5,16) to[short] (10,14.5);
+\draw (10,16) to[short] (10,14.5);
+\draw (10,14.5) to[short] (11.5,16);
+\draw (11.5,16) to[short] (11.5,14.5);
+\draw (11.5,14.5) to[short] (13,16);
+\draw (13,16) to[short] (13,14.5);
+\draw (13,16) to[short] (14.5,14.5);
+\draw (7,16) to[short] (13,16);
+\draw (5.5,14.5) to[short] (14.5,14.5);
+\node [font=\normalsize] at (7,16.25) {P};
+\node [font=\normalsize] at (8.5,16.25) {Q};
+\node [font=\normalsize] at (7,14.25) {R};
+\node [font=\normalsize] at (8.5,14.25) {S};
+\draw (5.5,14.5) to[short] (5.7,14.3);
+\draw (5.5,14.5) to[short] (5.3,14.3);
+\draw (5.3,14.3) to[short] (5.7,14.3);
+\draw (14.5,14.5) to[short] (14.7,14.3);
+\draw (14.5,14.5) to[short] (14.3,14.3);
+\draw (14.7,14.3) to[short] (14.3,14.3);
+\draw (14.3,14.1) to[short] (14.3,14.3);
+\draw (14.5,14.1) to[short] (14.5,14.3);
+\draw (14.7,14.1) to[short] (14.7,14.3);
+\draw (14.2,14.1) to[short] (14.8,14.1);
+\end{circuitikz}\\
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (2.75,14) to[short] (14.75,14);
+\draw (5,14) to[short] (5,13.5);
+\draw (7.5,15.25) to[short] (7.5,14);
+\draw (5,13.5) to[short] (7.5,15.25);
+\draw (7.5,15.25) to[short] (14.75,14);
+\draw (2.75,14) to[short] (5,13.5);
+\draw [->, >=Stealth] (3.75,13) -- (4.5,13.75);
+\node [font=\normalsize] at (3.25,12.75) {compression};
+\node [font=\normalsize] at (11,13.5) {ILD};
+\draw [->, >=Stealth] (11.25,15.25) -- (10.25,14.5);
+\node [font=\normalsize] at (11.25,15.5) {tension};
+\end{circuitikz}
+
