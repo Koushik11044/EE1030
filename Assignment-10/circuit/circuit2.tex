@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+    % Draw axes
+    \draw[->] (-0.5, 0) -- (4, 0) node[right] {$x$};
+    \draw[->] (0, -0.5) -- (0, 4) node[above] {$y$};
+    
+    % Draw semicircle with an arrow pointing along the curve toward C
+    \draw[thick] (0,3) arc[start angle=90, end angle=0, radius=3];
+    \draw[thick,->] (3,0) arc[start angle=0, end angle=45, radius=3]; % Arrow along the curve ending at C
+    
+    % Add labels for points and curve
+    \node at (0,3) [left] {$(0,3)$};
+    \node at (3,0) [below] {$(3,0)$};
+    \node at (1.5,1.5) [above right] {$C$};
+\end{tikzpicture}

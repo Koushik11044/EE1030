@@ -1,0 +1,29 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (8,13.75) to[short, -o] (7.5,13.75) ;
+\draw (8,12.5) to[short, -o] (7.5,12.5) ;
+\draw (8,11.5) to[short, -o] (7.5,11.5) ;
+\draw (8,10) to[short, -o] (7.5,10) ;
+\draw [->, >=Stealth] (8,13.75) -- (9,13.75);
+\draw [->, >=Stealth] (10.25,12.5) -- (8.75,12.5);
+\draw [->, >=Stealth] (8,11.5) -- (9.5,11.5);
+\draw [->, >=Stealth] (8,10) -- (9.5,10);
+\draw (7.75,12.5) to[short] (9,12.5);
+\draw (10.25,12.5) to[short] (10.75,12);
+\draw (10.75,13.75) to[R] (10.75,12);
+\draw (9,13.75) to[short] (10.75,13.75);
+\draw (10.75,12) to[C] (9.75,11);
+\draw (9.75,11.5) to[short] (9.75,11);
+\draw (8.5,11.5) to[short] (9.75,11.5);
+\node at (10.75,12) [circ] {};
+\draw (10.75,12) to[L ] (12,10.75);
+\draw (9.5,10) to[short] (12,10);
+\draw (12,10.75) to[short] (12,10);
+\node [font=\normalsize] at (7,13.75) {a};
+\node [font=\normalsize] at (7,12.5) {n};
+\node [font=\normalsize] at (7,11.5) {c};
+\node [font=\normalsize] at (7,10) {b};
+\node [font=\normalsize] at (10.75,11) {-j10};
+\node [font=\normalsize] at (12,11.75) {j10};
+\node [font=\normalsize] at (11.25,13) {R};
+\end{circuitikz}

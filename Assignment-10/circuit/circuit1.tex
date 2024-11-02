@@ -1,0 +1,27 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+
+\draw (8.5,14) to[Tnpn, transistors/scale=1.19] (6.5,14);
+\draw (4.5,14) to[american voltage source] (4.5,9.75);
+\draw (7.5,11.5) to[american voltage source] (7.5,9.75);
+\draw (4.5,14) to[R] (6.5,14);
+\draw (7.5,13.25) to[R] (7.5,11.5);
+\draw (4.5,9.75) to[short] (6.5,9.75);
+\draw (4.5,9.75) to[short] (11.75,9.75);
+\draw (10,14) to[R] (10,9.75);
+\draw (8.25,14) to[short] (11.75,14);
+\node [font=\large] at (12,14) {a};
+\node [font=\large] at (12,9.75) {b};
+\node [font=\large] at (5.5,14.5) {10 $\Omega$};
+\node [font=\large] at (6.5,12.5) {10 k$\Omega$};
+\node [font=\large] at (3.5,11.75) {15 V};
+\node [font=\large] at (6.25,10.5) {10.7 V};
+\node [font=\large] at (9.25,12) {1 k$\Omega$};
+\node at (7.5,9.75) [circ] {};
+\node at (10,14) [circ] {};
+\node at (10,9.75) [circ] {};
+\node at (11.75,9.75) [circ] {};
+\node at (11.75,14) [circ] {};
+\draw [->, >=Stealth] (12,12) -- (11,12);
+\node [font=\large] at (12.5,12) {$R_{TH}$};
+\end{circuitikz}

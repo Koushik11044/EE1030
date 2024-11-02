@@ -1,0 +1,136 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                             
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}    
+\usepackage{float}                                     
+\usepackage{lscape}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usetikzlibrary{patterns}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-9}
+\author{EE224BTECH11044 - Muthyala koushik
+}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{2018-EE 40-52}
+\begin{enumerate}[start=40]
+	\item The Fourier transform of a continuous-time signal $x\brak{t}$ is given by $X\brak{\omega}=\frac{1}{\brak{10+j\omega}^2}$, $-\infty<\omega<\infty$, where $j=\sqrt{-1}$ and $\omega$ denotes frequency. Then the value of $\abs{\ln{x\brak{t}}}$ at $t=1$ is $\rule{2cm}{0.4pt}$ \brak{\text{up to 1 decimal place}}. \brak{\text{$\ln$ denotes the logarithm to base $e$}}\\
+
+	\item In the circuit shown in the figure, the bipolar junction transistor $\brak{\text{BJT}}$ has a current gain $\beta = 100$. The base-emitter voltage drop is a constant, $V_{BE} = 0.7 V$. The value of the Thevenin equivalent resistance $R_{Th}$ $\brak{\text{in \ohm}}$ as shown in the figure is $\rule{2cm}{0.4pt}$ $\brak{\text{up to 2 decimal places}}$.\\
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit1.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+	\item As shown in the figure, $C$ is the arc from the point $\brak{3,0}$ to the point $\brak{0,3}$ on the circle $x^2 + y^2 = 9$. The value of the integral $\int_{C} \brak{y^2+2yx}dx + \brak{2xy+x^2}dy$ is $\rule{2cm}{0.4pt}$ $\brak{\text{up to 2 decimal places}}$.\\
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit2.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+	\item Let $f\brak{x}=3x^3-7x^2+5x+6$. The maximum value of $f\brak{x}$ over the interval $\sbrak{0, 2}$ is $\rule{2cm}{0.4pt}$ $\brak{\text{up to 1 decimal place}}$.\\
+
+	\item Let $A = \begin{bmatrix} 
+	1 & 0 & -1 \\
+	-1 & 2 & 0 \\
+	0 & 0 & -2
+	\end{bmatrix}$ and $B = A^3 - A^2 - 4A + 5I$, where $I$ is the $3\times3$ identity matrix. The determinant of B is $\rule{2cm}{0.4pt}$ (up to 1 decimal place).\\
+
+        \item The capacitance of an air-filled parallel-plate capacitor is $60$ pF. When a dielectric slab whose thickness is half the distance between the plates, is placed on one of the plates covering it entirely, the capacitance becomes $86$ pF. Neglecting the fringing effects, the relative permittivity of the dielectric is $\rule{2cm}{0.4pt}$ (up to 2 decimal places).\\
+
+	\item he unit step response $y\brak{t}$ of a unity feedback system with open loop transfer function $G\brak{s}H\brak{s}=\frac{K}{\brak{s+1}^2\brak{s+2}}$ is shown in the figure. The value of K is $\rule{2cm}{0.4pt}$ $\brak{\text{up to 2 decimal places}}$.\\
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit7.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+
+	\item A three-phase load is connected to a three-phase balanced supply as shown in the figure. If $V_{an}=100\angle0^\circ,V_{bn}=100\angle-120^\circ$ and $V_{cn}=100\angle-240^\circ$ $\brak{\text{angles are considered positive in the anti-clockwise direction}}$, the value of R for zero current in the neutral wire is $\rule{2cm}{0.4pt}$ $\brak{\text{up to 2 decimal places}}$.\\
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit3.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+	\item The voltage across the circuit in the figure, and the current through it, are given by the following expressions:\\$v\brak{t}=5-10\cos{\brak{\omega t+60^\circ}}V$\\$i\brak{t}=5+X\cos{\brak{\omega t}}A$\\
+	where $\omega =100\pi$ radian/s. If the average power delivered to the circuit is zero, then the value of $X\brak{\text{in Ampere}}$ is $\rule{2cm}{0.4pt}$ $\brak{\text{up to 2 decimal places}}$.\\
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit4.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+        \item A phase controlled single phase rectifier, supplied by an AC source, feeds power to an R-L-E load as shown in the figure. The rectifier output voltage has an average value given by $V_0=\frac{v_m}{2\pi}\brak{3+\cos{\alpha}}$, where $V_m=80\pi$ volts and $\alpha$ is the firing angle. If the power delivered to the lossless battery is $1600$ W, $\alpha$ in degree is $\rule{2cm}{0.4pt}$ (up to $2$ decimal places).\\
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit5.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+	\item The figure shows two buck converters connected in parallel. The common input dc voltage for the converters has a value of $100$ V. The converters have inductors of identical value. The load resistance is $1\ohm$ The capacitor voltage has negligible ripple. Both converters operate in the continuous conduction mode. The switching frequency is $1$ kHz, and the switch control signals are as shown. The circuit operates in the steady state. Assuming that the converters share the load equally, the average value of $i_{S1}$, the current of switch $S1$ (in Ampere), is $\rule{2cm}{0.4pt}$ (up to $2$ decimal places).\\
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit6.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+	\item A $3$-phase $900$ kVA, $3$ kV /$\sqrt{3}$ kV ($\Delta$/Y), $50$ Hz transformer has primary (high voltage side) resistance per phase of $0.3 \ohm$ and secondary (low voltage side) resistance per phase of $0.02 \ohm$. Iron loss of the transformer is $10$ kW. The full load $\%$ efficiency of the transformer operated at unity power factor is $\rule{2cm}{0.4pt}$ (up to $2$ decimal places).\\
+
+	\item A $200$ V DC series motor, when operating from rated voltage while driving a certain load, draws $10$ A current and runs at $1000$ r.p.m. The total series resistance is $1\ohm$. The magnetic circuit is assumed to be linear. At the same supply voltage, the load torque is increased by $44\%$. The speed of the motor in r.p.m. (rounded to the nearest integer) is $\rule{2cm}{0.4pt}$ .
+
+
+
+\end{enumerate}
+
+\end{document}
