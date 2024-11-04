@@ -1,0 +1,96 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                             
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}    
+\usepackage{float}                                     
+\usepackage{lscape}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usetikzlibrary{patterns}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-11}
+\author{EE224BTECH11044 - Muthyala koushik
+}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{2023-AE 53-65}
+\begin{enumerate}[start=53]
+	\item Consider a thin-walled cylindrical pressure vessel made of an alloy with yield strength of $300$ MPa. The vessel has end caps to contain the pressure. The ratio of radius of the vessel to its wall thickness is $100$. As per the von Mises yield criterion, the internal pressure that would cause the failure of the vessel is $\rule{2cm}{0.4pt}$ MPa. (round off to two decimal places)
+
+	\item Consider the differential equation
+		$$x^2\frac{d^2y}{dx^2}+4x\frac{dy}{dx}+2y=0$$
+		for $x\geq 1$ with initial conditions $y=0$, $\frac{dy}{dx}=1$ at $x=1$. The value of y at $x=2$ is $\rule{2cm}{0.4pt}$.(round off to two decimal places)
+
+	\item The operating characteristics of a pump were measured to be $C_p=a{\Phi}^2$, where power coefficient $C_p=\frac{P}{\rho{\omega}^3D^5}$, $\Phi$ is the flow coefficient, $a$ is a constant, $D$ is a length scale, $\omega$ is the rotation rate, $\rho$ is fluid density, and $P$ is the power required. The flow coefficient is a dimensionless volume flow rate scaled with $\omega$ and $D$ . Assuming that the flow rate remains the same, if the rotation rate is increased to $1.25\omega$, the power changes to $\alpha P$. The value of $\alpha$ is $\rule{2cm}{0.4pt}$ . (round off to two decimal places)
+
+	\item A thin cambered airfoil has lift coefficient $C_l=0$ at an angle of attack $\alpha=-1.1^\circ$. Assuming that stall occurs at much larger $\alpha$, the $C_l$ at $\alpha=4^\circ$ is $\rule{2cm}{0.4pt}$. (round off to two decimal places)
+
+	\item In a potential flow, a uniform stream of strength $ U $ directed along the x-axis and four line sources (2-dimensional) of strengths $\frac{\pi}{2}, -\frac{\pi}{3}, \frac{\pi}{4}, -\frac{\pi}{5}$ are placed along the x-axis at $ x = 0, 1, 2 $ and $ 3 $, respectively. The strength of an additional line source to be placed at $ x = 4 $ such that a closed streamline encircles all five sources is $\rule{2cm}{0.4pt}$. (round off to two decimal places).
+
+	\item Enstrophy is defined as the square of the magnitude of vorticity. For the three-dimensional velocity field $$ \vec{V} = \brak{4x - 1.5y + 2.5z}\hat{i} + \brak{1.5x - 1.5y}\hat{j} + \brak{0.7xy} \hat{k},$$ the enstrophy at location $\brak{1, 1, 1}$ is $\rule{2cm}{0.4pt}$. (round off to two decimal places).
+
+	\item An airplane with wing planform area of $20$ $\text{m}^2$ and weight $8$ kN is flying straight and level with a speed of $100$ m/s. The total drag coefficient is 0.026 and the air density is $0.7$ kg/$\text{m}^3$. The total thrust required to introduce a steady climb angle of 0.1 radians is $\rule{2cm}{0.4pt}$ N. (round off to the nearest integer)
+
+	\item The maximum permissible load factor and the maximum lift force coefficient for an airplane is $7$ and $2$, respectively. For a wing loading of $6500$ N/$\text{m}^2$ and air density $1.23$ kg/$\text{m}^3$, the speed yielding the highest possible turn rate in the vertical plane is $\rule{2cm}{0.4pt}$ m/s. (round off to the nearest integer)
+
+	\item A gas turbine combustor is burning methane and air at an equivalence ratio $\phi=0.5$, where $\phi=\frac{F/A}{\sbrak{F/A}_{stoich}}$ and $\sbrak{F/A}_{stoich}$ is the ratio of mass flow rate of fuel to the mass flow rate of air at stoichiometry. If the air flow rate is $\dot{m}_{\text{air}} = 20$ kg/s then the mass flow rate of methane is $\rule{2cm}{0.4pt}$ kg/s. (round off to two decimal places)
+
+	\item The universal gravitational constant is $6.67\times10^{-11}$ $\text{Nm}^2/\text{kg}^2$. For a planet of mass $6.4169\times10^{23}$ kg and radius $3390$ km, the escape velocity is $\rule{2cm}{0.4pt}$ km/s. (round off to one decimal place).
+
+	\item A satellite is in a circular orbit around Earth with a time period of $90$ minutes. The radius of Earth is $6370$ km, mass of Earth is $5.98\times10^{24}$kg and the universal gravitational constant is $6.67\times10^{-11}$ $\text{Nm}^2/\text{kg}^2$. The altitude of the satellite above mean sea level is $\rule{2cm}{0.4pt}$ km. (round off to the nearest integer)
+
+	\item A centrifugal air compressor has inlet root diameter of $0.25$ m and the outlet diameter of the impeller is $0.6$ m. The pressure ratio is $5.0$. The air at the inlet of the rotor is at $1$ atm and $25^\circ$C. The polytropic efficiency is $0.8$ and slip factor is $0.92$. Use $C_p=1.004$ kJ/kg-K and $\gamma=1.4$. The impeller speed in revolutions per minute (RPM) is $\rule{2cm}{0.4pt}$. (round off to the nearest integer)
+
+	\item Consider a cryogenic liquid rocket engine using an expander cycle with liquid hydrogen and liquid oxygen as the two propellants. The mass flow rate of hydrogen $\dot{m}_{H_2}$ into the combustion chamber is $32$ kg/s , and the mass flow rate of oxygen $\dot{m}_{O_2}$ into the chamber is such that $\dot{m}_{O_2}/\dot{m}_{H_2}=8$. The combustion of hydrogen and oxygen is at stoichiometry. Assuming that the rate of the forward reaction is much larger than that of the reverse reaction, the rate of formation of $\text{H}_2$O is $\rule{2cm}{0.4pt}$ kmol/s. (round off to the nearest integer)
+
+
+\end{enumerate}
+
+\end{document}
