@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{sys}                                          \PYG{c+c1}{\PYGZsh{}for path to external scripts}
+\PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}/home/koushik/matgeo/codes/CoordGeo\PYGZsq{}}\PYG{p}{)}        \PYG{c+c1}{\PYGZsh{}path to my scripts}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy.linalg} \PYG{k}{as} \PYG{n+nn}{LA}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.image} \PYG{k}{as} \PYG{n+nn}{mpimg}
+
+\PYG{c+c1}{\PYGZsh{}local imports}
+\PYG{k+kn}{from} \PYG{n+nn}{line.funcs} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{k+kn}{from} \PYG{n+nn}{triangle.funcs} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{k+kn}{from} \PYG{n+nn}{conics.funcs} \PYG{k+kn}{import} \PYG{n}{circ\PYGZus{}gen}
+
+\PYG{c+c1}{\PYGZsh{} Load the shared C library}
+\PYG{n}{lib} \PYG{o}{=} \PYG{n}{ctypes}\PYG{o}{.}\PYG{n}{CDLL}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./vertex.so\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Helper function to convert NumPy arrays to C arrays}
+\PYG{k}{def} \PYG{n+nf}{to\PYGZus{}c\PYGZus{}array}\PYG{p}{(}\PYG{n}{np\PYGZus{}array}\PYG{p}{):}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{ctypes}\PYG{o}{.}\PYG{n}{c\PYGZus{}double} \PYG{o}{*} \PYG{l+m+mi}{2}\PYG{p}{)(}\PYG{o}{*}\PYG{n}{np\PYGZus{}array}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Define the Python function to call the C function}
+\PYG{k}{def} \PYG{n+nf}{calculate\PYGZus{}c\PYGZus{}vertex}\PYG{p}{(}\PYG{n}{O}\PYG{p}{,} \PYG{n}{A}\PYG{p}{,} \PYG{n}{B}\PYG{p}{):}
+    \PYG{n}{C} \PYG{o}{=} \PYG{p}{(}\PYG{n}{ctypes}\PYG{o}{.}\PYG{n}{c\PYGZus{}double} \PYG{o}{*} \PYG{l+m+mi}{2}\PYG{p}{)()}  \PYG{c+c1}{\PYGZsh{} Create an empty C array for the output (vertex C)}
+
+    \PYG{c+c1}{\PYGZsh{} Convert NumPy arrays to C arrays using the helper function}
+    \PYG{n}{O\PYGZus{}c} \PYG{o}{=} \PYG{n}{to\PYGZus{}c\PYGZus{}array}\PYG{p}{(}\PYG{n}{O}\PYG{p}{)}
+    \PYG{n}{A\PYGZus{}c} \PYG{o}{=} \PYG{n}{to\PYGZus{}c\PYGZus{}array}\PYG{p}{(}\PYG{n}{A}\PYG{p}{)}
+    \PYG{n}{B\PYGZus{}c} \PYG{o}{=} \PYG{n}{to\PYGZus{}c\PYGZus{}array}\PYG{p}{(}\PYG{n}{B}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Call the C function to calculate the vertex C}
+    \PYG{n}{lib}\PYG{o}{.}\PYG{n}{find\PYGZus{}c\PYGZus{}vertex}\PYG{p}{(}\PYG{n}{O\PYGZus{}c}\PYG{p}{,} \PYG{n}{A\PYGZus{}c}\PYG{p}{,} \PYG{n}{B\PYGZus{}c}\PYG{p}{,} \PYG{n}{C}\PYG{p}{)}
+\end{Verbatim}

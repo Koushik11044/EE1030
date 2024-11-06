@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+ \PYG{c+c1}{\PYGZsh{} Return the C vertex as a Python list}
+    \PYG{k}{return} \PYG{p}{[}\PYG{n}{C}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{],} \PYG{n}{C}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]]}
+
+\PYG{c+c1}{\PYGZsh{} Generating points O, A, B}
+\PYG{n}{O} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{([}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{])}\PYG{o}{.}\PYG{n}{reshape}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{B} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{([}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{])}\PYG{o}{.}\PYG{n}{reshape}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{A} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{([}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{])}\PYG{o}{.}\PYG{n}{reshape}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Call the function to calculate the fourth vertex C}
+\PYG{n}{C} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{(}\PYG{n}{calculate\PYGZus{}c\PYGZus{}vertex}\PYG{p}{(}\PYG{n}{O}\PYG{o}{.}\PYG{n}{flatten}\PYG{p}{(),} \PYG{n}{A}\PYG{o}{.}\PYG{n}{flatten}\PYG{p}{(),} \PYG{n}{B}\PYG{o}{.}\PYG{n}{flatten}\PYG{p}{()))}\PYG{o}{.}\PYG{n}{reshape}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Generating lines for the parallelogram}
+\PYG{k+kn}{from} \PYG{n+nn}{line.funcs} \PYG{k+kn}{import} \PYG{n}{line\PYGZus{}gen}
+
+\PYG{n}{x\PYGZus{}OB} \PYG{o}{=} \PYG{n}{line\PYGZus{}gen}\PYG{p}{(}\PYG{n}{O}\PYG{p}{,} \PYG{n}{B}\PYG{p}{)}
+\PYG{n}{x\PYGZus{}OA} \PYG{o}{=} \PYG{n}{line\PYGZus{}gen}\PYG{p}{(}\PYG{n}{O}\PYG{p}{,} \PYG{n}{A}\PYG{p}{)}
+\PYG{n}{x\PYGZus{}BC} \PYG{o}{=} \PYG{n}{line\PYGZus{}gen}\PYG{p}{(}\PYG{n}{B}\PYG{p}{,} \PYG{n}{C}\PYG{p}{)}
+\PYG{n}{x\PYGZus{}AC} \PYG{o}{=} \PYG{n}{line\PYGZus{}gen}\PYG{p}{(}\PYG{n}{A}\PYG{p}{,} \PYG{n}{C}\PYG{p}{)}
+\PYG{n}{x\PYGZus{}AB} \PYG{o}{=} \PYG{n}{line\PYGZus{}gen}\PYG{p}{(}\PYG{n}{A}\PYG{p}{,} \PYG{n}{B}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Plotting the lines}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x\PYGZus{}AB}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,:],} \PYG{n}{x\PYGZus{}AB}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,:],} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}Diagonal\PYGZhy{}AB\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x\PYGZus{}OB}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,:],} \PYG{n}{x\PYGZus{}OB}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,:],} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}line\PYGZhy{}OB\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x\PYGZus{}OA}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,:],} \PYG{n}{x\PYGZus{}OA}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,:],} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}line\PYGZhy{}OA\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x\PYGZus{}AC}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,:],} \PYG{n}{x\PYGZus{}AC}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,:],} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}line\PYGZhy{}AC\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x\PYGZus{}BC}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,:],} \PYG{n}{x\PYGZus{}BC}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,:],} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZdl{}line\PYGZhy{}BC\PYGZdl{}\PYGZsq{}}\PYG{p}{)}
+
+
+\end{Verbatim}

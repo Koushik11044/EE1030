@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Labeling the coordinates}
+\PYG{n}{colors} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{arange}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{)}
+\PYG{n}{tri\PYGZus{}coords} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{block}\PYG{p}{([[}\PYG{n}{O}\PYG{p}{,} \PYG{n}{B}\PYG{p}{,} \PYG{n}{A}\PYG{p}{,} \PYG{n}{C}\PYG{p}{]])}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{tri\PYGZus{}coords}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,:],} \PYG{n}{tri\PYGZus{}coords}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,:],} \PYG{n}{c}\PYG{o}{=}\PYG{n}{colors}\PYG{p}{)}
+\PYG{n}{vert\PYGZus{}labels} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}O\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}B\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}A\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}C\PYGZsq{}}\PYG{p}{]}
+\PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{txt} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n}{vert\PYGZus{}labels}\PYG{p}{):}
+    \PYG{n}{plt}\PYG{o}{.}\PYG{n}{annotate}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{txt}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{(}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{tri\PYGZus{}coords}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n}{i}\PYG{p}{]}\PYG{l+s+si}{:}\PYG{l+s+s1}{.2f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{, }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{tri\PYGZus{}coords}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{i}\PYG{p}{]}\PYG{l+s+si}{:}\PYG{l+s+s1}{.2f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{)\PYGZsq{}}\PYG{p}{,}
+                 \PYG{p}{(}\PYG{n}{tri\PYGZus{}coords}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n}{i}\PYG{p}{],} \PYG{n}{tri\PYGZus{}coords}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{i}\PYG{p}{]),}
+                 \PYG{n}{textcoords}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}offset points\PYGZdq{}}\PYG{p}{,}
+                 \PYG{n}{xytext}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{25}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{),}
+                 \PYG{n}{ha}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}center\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Adjust plot aesthetics}
+\PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{gca}\PYG{p}{()}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{spines}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}top\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}color}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}none\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{spines}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}left\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}position}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}zero\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{spines}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}right\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}color}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}none\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{spines}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}bottom\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}position}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}zero\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{()}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{axis}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}equal\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Parallelogram AOBC\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{()}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+
+\end{Verbatim}
