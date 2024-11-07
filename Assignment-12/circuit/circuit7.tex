@@ -1,0 +1,25 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\node [font=\large] at (2.75,6.5) {};
+\draw (4.75,14) to[L ] (8.5,14);
+\draw (8.5,14) to[normal open switch] (8.5,9);
+\draw (8.5,14) to[D] (11.75,14);
+\draw (11.75,14) to[curved capacitor] (11.75,9);
+\draw (12.75,14) to[R] (12.75,9);
+\draw (4.75,9) to[short] (12.75,9);
+\node [font=\large] at (11.5,11.75) {+};
+\node [font=\large] at (5,11.25) {-};
+\node [font=\normalsize] at (6.5,14.75) {L = 2 mH};
+\node [font=\large] at (8,11.75) {S};
+\node [font=\normalsize] at (10.5,11.5) {$V_0 = 40 V$};
+\node [font=\normalsize] at (3.5,11.5) {$V_i = 20 V$};
+\draw [->, >=Stealth] (11.75,14) -- (12.25,14);
+\draw (12.75,14) to[short] (12.25,14);
+\node [font=\normalsize] at (12.25,14.5) {$I_0$};
+\node [font=\large] at (11.5,11.25) {$-$};
+\node [font=\large] at (5,11.75) {$+$};
+\draw (4.75,14) to[battery1] (4.75,9);
+\node [font=\normalsize] at (13.5,11.5) {10 $\Omega$};
+\draw [->, >=Stealth] (4.75,14) -- (5.25,14);
+\node [font=\normalsize] at (5.25,13.5) {$I_i$};
+\end{circuitikz}

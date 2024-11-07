@@ -1,0 +1,19 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (5.75,13.5) to[sinusoidal voltage source, sources/symbol/rotate=auto] (6.5,13.5);
+\draw [short] (6.5,13.5) -- (8.5,13.5);
+\draw [short] (7.25,14.25) -- (7.25,12.75);
+\draw (8.5,14) to[L ] (8.5,13);
+\draw (10,13) to[L ] (10,14);
+\draw (10,13.5) to[short] (11.5,13.5);
+\draw [short] (11.5,14.25) -- (11.5,12.75);
+\draw [short] (11.5,14) -- (15,14);
+\draw [short] (11.5,13) -- (15,13);
+\node [font=\large] at (13.25,14.5) {Line-1};
+\node [font=\large] at (13.25,12.5) {Line-2};
+\draw [short] (15,14.25) -- (15,12.75);
+\draw [short] (6.75,12.25) -- (7.5,12.25)node[pos=0.5, fill=white]{Generator};
+\draw [short] (6.75,11.75) -- (7.5,11.75)node[pos=0.5, fill=white]{bus};
+\draw [short] (15,11.75) -- (16.25,12)node[pos=0.5, fill=white]{Infinite};
+\draw [short] (15.25,11.5) -- (15.25,11.25)node[pos=0.5, fill=white]{bus};
+\end{circuitikz}

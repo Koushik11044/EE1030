@@ -1,0 +1,18 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw  (6.75,15.25) circle (0.5cm);
+\draw [->, >=Stealth] (4.75,15.25) -- (6.25,15.25);
+\draw [->, >=Stealth] (7.25,15.25) -- (8.75,15.25);
+\draw [->, >=Stealth] (6.75,13.25) -- (6.75,14.75);
+\draw [short] (6.75,13.25) -- (15.25,13.25);
+\draw  (12,16) rectangle (14,14.5);
+\draw [->, >=Stealth] (14,15.25) -- (17,15.25);
+\draw [short] (15.25,15.25) -- (15.25,13.25);
+\draw [short] (4.75,16) -- (5.25,15.5)node[pos=0.5, fill=white]{R(s)};
+\node [font=\large] at (6.25,15.75) {+};
+\node [font=\large] at (7.25,14.75) {-};
+\node [font=\large] at (13,15.25) {G(s)};
+\node [font=\large] at (16.25,15.75) {C(s)};
+\draw [->, >=Stealth] (10.25,15.25) -- (12,15.25);
+\draw  (8.75,16.25) rectangle  node {\large $\frac{K_I}{s}$} (10.25,14.25);
+\end{circuitikz}

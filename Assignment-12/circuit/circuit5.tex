@@ -1,0 +1,23 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (7.75,18) to[short, -o] (7.75,18.75) ;
+\draw (12.5,18) to[short, -o] (12.5,18.75) ;
+\draw (7.75,18) to[R] (7.75,15.5);
+\draw (7.75,15.5) to[D] (10.25,15.5);
+\draw (12.5,18.25) to[D] (12.5,15.5);
+\draw (10.25,15.5) to[R] (12.5,15.5);
+\draw (7.75,15.5) to[R] (7.75,13.5);
+\draw (12.5,15.5) to[R] (12.5,13.5);
+\draw (7.75,13.5) to (7.75,13) node[ground]{};
+\draw (12.5,13.5) to (12.5,13) node[ground]{};
+\node [font=\large] at (7,14.5) {$1 k\Omega$};
+\node [font=\large] at (7,16.75) {$1 k\Omega$};
+\node [font=\large] at (11.25,16) {$1 k\Omega$};
+\node [font=\large] at (13.25,14.5) {$1 k\Omega$};
+\node [font=\large] at (11.8,17) {$D1$};
+\node [font=\large] at (9,16.3) {$D2$};
+\draw [->, >=Stealth] (13,17.5) -- (13,16.25);
+\node [font=\large] at (13.25,17) {$I$};
+\node [font=\large] at (7.75,19.25) {$+10 V$};
+\node [font=\large] at (12.25,19.25) {$+3 V$};
+\end{circuitikz}

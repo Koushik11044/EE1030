@@ -1,0 +1,35 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (7,11.25) to (7,10.75) node[ground]{};
+\draw (5.5,13.5) to (5.5,13) node[ground]{};
+\draw (10.5,11.25) to (10.5,10.75) node[ground]{};
+\draw (15.25,12.25) to (15.25,11.75) node[ground]{};
+\draw (5.5,13.5) to[sinusoidal voltage source, sources/symbol/rotate=auto] (5.5,15.25);
+\draw (5.5,15.25) to[R] (9.25,15.25);
+\draw (9.25,15.25) to[R] (14,15.25);
+\draw (9.25,15.25) to[short] (9.25,13.75);
+\draw (12.5,13.25) node[op amp,scale=1] (opamp2) {};
+\draw (opamp2.+) to[short] (11,12.75);
+\draw  (opamp2.-) to[short] (11,13.75);
+\draw (13.7,13.25) to[short](14,13.25);
+\draw (9.25,13.75) to[short] (11.75,13.75);
+\draw (7,11.25) to[sinusoidal voltage source, sources/symbol/rotate=auto] (7,12.75);
+\draw (7,12.75) to[R] (11,12.75);
+\draw (10.5,12.75) to[R] (10.5,10.75);
+\draw (14,13.25) to[short] (15.25,13.25);
+\draw (14,15.25) to[short] (14,13.25);
+\node [font=\large] at (15.5,13.25) {+};
+\node [font=\large] at (15.5,12.25) {-};
+\node [font=\large] at (6.5,12.5) {+};
+\node [font=\large] at (6.5,11.5) {-};
+\node [font=\large] at (5,14.75) {+};
+\node [font=\large] at (5,14) {-};
+\node [font=\large] at (4.25,14.5) {$v_{in1}$};
+\node [font=\large] at (6,12) {$v_{in2}$};
+\node [font=\large] at (7.5,15.75) {10.5 k$\Omega$};
+\node [font=\large] at (11.75,15.75) {101 k$\Omega$};
+\node [font=\large] at (8.75,13.5) {9.5 k$\Omega$};
+\node [font=\large] at (11.75,11.75) {101.5 k$\Omega$};
+\node [font=\large] at (16,13) {$v_0$};
+\node [font=\large] at (2.75,6.5) {};
+\end{circuitikz}

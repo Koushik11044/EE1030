@@ -1,0 +1,137 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                             
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}    
+\usepackage{float}                                     
+\usepackage{lscape}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usetikzlibrary{patterns}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-11}
+\author{EE224BTECH11044 - Muthyala koushik
+}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{2023-AE 53-65}
+\begin{enumerate}[start=53]
+	\item If the energy of a continuous-time signal $x\brak{t}$ is $E$ and the energy of the signal $2x\brak{2t-1}$ is $cE$, then $c$ is $\rule{2cm}{0.4pt}$ (rounded off to $1$ decimal place).
+
+	\item A $3$-phase star connected slip ring induction motor has the following parameters referred to the stator:
+		$$R_s=3\ohm, X_s=2\ohm, {X_r}'=2\ohm, {R_r}'=2.5\ohm$$
+The per phase stator to rotor effective turns ratio is $3:1$. The rotor winding is also star connected. The magnetizing reactance and core loss of the motor can be neglected. To have maximum torque at starting, the value of the extra resistance in ohms (referred to the rotor side) to be connected in series with each phase of the rotor winding is $\rule{2cm}{0.4pt}$ (rounded off to $2$ decimal places).
+
+        \item  A $5$ kW, $220$ V DC shunt motor has $0.5\ohm$ armature resistance including brushes. The motor draws a no-load current of $3$ A. The field current is constant at $1$ A. Assuming that the core and rotational losses are constant and independent of the load, the current (in amperes) drawn by the motor while delivering the rated load, for the best possible efficiency, is $\rule{2cm}{0.4pt}$ (rounded off to $2$ decimal places).
+
+	\item The single line diagram of a lossless system is shown in the figure. The system is operating in steady-state at a stable equilibrium point with the power output of the generator being $P_{max}\sin{\delta}$, where $\delta$ is the load angle and the mechanical power input is $0.5P_{max}$. A fault occurs on line $2$ such that the power output of the generator is less than $0.5P_{max}$ during the fault. After the fault is cleared by opening line $2$, the power output of the generator is $\cbrak{P_{max}/\sqrt{2}}\sin{\delta}$. If the critical fault clearing angle is $\pi/2$ radians, the accelerating area on the power angle curve is $\rule{2cm}{0.4pt}$ times $P_{max}$ (rounded off to $2$ decimal places).
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit1.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+	\item Consider the closed-loop system shown in the figure with
+		$$G\brak{s}=\frac{k\brak{s^2-2s+2}}{s^2+2s+5}$$
+		The root locus for the closed-loop system is to be drawn for $0\leq K<\infty$. The angle of departure (between $0^\circ$ and $360^\circ$) of the root locus branch drawn from the pole $\brak{-1+j2}$, in degrees, is $\rule{2cm}{0.4pt}$ (rounded off to the nearest integer).
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit2.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+	\item Consider the stable closed-loop system shown in the figure. The asymptotic Bode magnitude plot of $G\brak{s}$ has a constant slope of $-20$ dB/decade at least till $100$ rad/sec with the gain crossover frequency being $10$ rad/sec. The asymptotic Bode phase plot remains constant at $-90^\circ$ at least till $\omega= 10$ rad/sec. The steady- state error of the closed-loop system for a unit ramp input is $\rule{2cm}{0.4pt}$ (rounded off to $2$ decimal places).
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit3.tex} % Includes the circuit diagram
+\end{figure}
+		
+
+	\item Consider the stable closed-loop system shown in the figure. The magnitude and phase values of the frequency response of $G\brak{s}$ are given in the table. The value of the gain $K_I \brak{> 0}$ for a $50^\circ$ phase margin is $\rule{2cm}{0.4pt}$ (rounded off to 2 decimal places).
+\begin{table}[H]    
+  \centering
+  \input{table/table1.tex}
+\end{table}
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit4.tex} % Includes the circuit diagram
+\end{figure}
+
+	\item In the given circuit, the diodes are ideal. The current $I$ through the diode $D1$ in milliamperes is $\rule{2cm}{0.4pt}$ (rounded off to two decimal places).
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit5.tex} % Includes the circuit diagram
+\end{figure}
+
+	\item A difference amplifier is shown in the figure. Assume the op-amp to be ideal. The CMRR (in dB) of the difference amplifier is $\rule{2cm}{0.4pt}$ (rounded off to $2$ decimal places).
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit6.tex} % Includes the circuit diagram
+\end{figure}
+
+	\item A single-phase half-controlled bridge converter supplies an inductive load with ripple free load current. The triggering angle of the converter is $60^\circ$. The ratio of the rms value of the fundamental component of the input current to the rms value of the total input current of the bridge is $\rule{2cm}{0.4pt}$ (rounded off to $3$ decimal places).
+
+	\item A single-phase full bridge voltage source inverter (VSI) feeds a purely inductive load. The inverter output voltage is a square wave in $180^\circ$ conduction mode. The fundamental frequency of the output voltage is $50$ Hz. If the DC input voltage of the inverter is $100$ V and the value of the load inductance is $20$ mH, the peak-to- peak load current in amperes is $\rule{2cm}{0.4pt}$ (rounded off to the nearest integer).
+
+	\item In the DC-DC converter shown in the figure, the current through the inductor is continuous. The switching frequency is $500$ Hz. The voltage $\brak{V_0}$ across the load is assumed to be constant and ripple free. The peak inductor current in amperes is $\rule{2cm}{0.4pt}$ (rounded off to the nearest integer).
+\begin{figure}[H]
+    \centering
+    \input{circuit/circuit7.tex} % Includes the circuit diagram
+\end{figure}
+
+	\item A single-phase full-controlled thyristor converter bridge is used for regenerative braking of a separately excited DC motor with the following specifications:
+\begin{table}[H]    
+  \centering
+  \input{table/table2.tex}
+\end{table}
+Assume that the motor is running at $600$ rpm and the armature terminals of the motor are suitably reversed for regenerative braking. If the armature current of the motor is to be maintained at the rated value, the triggering angle of the converter bridge in degrees should be $\rule{2cm}{0.4pt}$ (rounded off to $2$ decimal places).
+
+\end{enumerate}
+
+\end{document}
